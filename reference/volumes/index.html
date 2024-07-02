@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://docs.cleura.cloud/howto/openstack/glance/filter/">
+        <link rel="canonical" href="https://docs.cleura.cloud/reference/volumes/">
       
       
-        <link rel="prev" href="../examine/">
+        <link rel="prev" href="../flavors/">
       
       
-        <link rel="next" href="../../keystone/app-creds/">
+        <link rel="next" href="../images/">
       
       
-      <link rel="icon" href="../../../../assets/favicon.ico">
+      <link rel="icon" href="../../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Listing and filtering images - Cleura Docs</title>
+        <title>Volume types - Cleura Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/cleura-palette.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/cleura-palette.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -66,11 +66,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Listing and filtering images - Cleura Docs" >
+        <meta  property="og:title"  content="Volume types - Cleura Docs" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.cleura.cloud/assets/images/social/howto/openstack/glance/filter.png" >
+        <meta  property="og:image"  content="https://docs.cleura.cloud/assets/images/social/reference/volumes/index.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -78,19 +78,19 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.cleura.cloud/howto/openstack/glance/filter/" >
+        <meta  property="og:url"  content="https://docs.cleura.cloud/reference/volumes/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Listing and filtering images - Cleura Docs" >
+        <meta  name="twitter:title"  content="Volume types - Cleura Docs" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.cleura.cloud/assets/images/social/howto/openstack/glance/filter.png" >
+        <meta  name="twitter:image"  content="https://docs.cleura.cloud/assets/images/social/reference/volumes/index.png" >
       
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -99,7 +99,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -118,7 +118,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#listing-and-filtering-images" class="md-skip">
+        <a href="#volume-types" class="md-skip">
           Skip to content
         </a>
       
@@ -134,9 +134,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="Cleura Docs" class="md-header__button md-logo" aria-label="Cleura Docs" data-md-component="logo">
+    <a href="../.." title="Cleura Docs" class="md-header__button md-logo" aria-label="Cleura Docs" data-md-component="logo">
       
-  <img src="../../../../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Listing and filtering images
+              Volume types
             
           </span>
         </div>
@@ -266,9 +266,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Cleura Docs" class="md-nav__button md-logo" aria-label="Cleura Docs" data-md-component="logo">
+    <a href="../.." title="Cleura Docs" class="md-nav__button md-logo" aria-label="Cleura Docs" data-md-component="logo">
       
-  <img src="../../../../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     Cleura Docs
@@ -295,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -312,8 +312,6 @@
       
   
   
-    
-  
   
   
     
@@ -338,16 +336,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../" class="md-nav__link ">
+            <a href="../../howto/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -364,7 +362,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             How-To Guides
@@ -423,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/create-account/" class="md-nav__link">
+      <a href="../../howto/getting-started/create-account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/enable-openstack-cli/" class="md-nav__link">
+      <a href="../../howto/getting-started/enable-openstack-cli/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -465,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/accessing-cc-rest-api/" class="md-nav__link">
+      <a href="../../howto/getting-started/accessing-cc-rest-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -491,10 +489,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -517,11 +513,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -535,7 +531,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             OpenStack
@@ -571,7 +567,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../barbican/" class="md-nav__link ">
+            <a href="../../howto/openstack/barbican/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -604,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../barbican/generic-secret/" class="md-nav__link">
+      <a href="../../howto/openstack/barbican/generic-secret/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -625,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../barbican/share-secret/" class="md-nav__link">
+      <a href="../../howto/openstack/barbican/share-secret/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cinder/resize-volumes/" class="md-nav__link">
+      <a href="../../howto/openstack/cinder/resize-volumes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -720,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cinder/encrypted-volumes/" class="md-nav__link">
+      <a href="../../howto/openstack/cinder/encrypted-volumes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -741,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cinder/retype-volumes/" class="md-nav__link">
+      <a href="../../howto/openstack/cinder/retype-volumes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -762,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cinder/sync-volumes/" class="md-nav__link">
+      <a href="../../howto/openstack/cinder/sync-volumes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,8 +784,6 @@
                 
   
   
-    
-  
   
   
     
@@ -806,16 +800,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../howto/openstack/glance/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -832,7 +826,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3_3">
             <span class="md-nav__icon md-icon"></span>
             Glance (image service)
@@ -848,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examine/" class="md-nav__link">
+      <a href="../../howto/openstack/glance/examine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -866,30 +860,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Listing and filtering images
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../howto/openstack/glance/filter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -898,71 +872,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#when-creating-a-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      When creating a server
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#on-the-images-tab" class="md-nav__link">
-    <span class="md-ellipsis">
-      On the Images tab
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filter-by-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filter by properties
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filter-by-tag" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filter by tag
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filter-by-name" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filter by name
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1022,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../keystone/app-creds/" class="md-nav__link">
+      <a href="../../howto/openstack/keystone/app-creds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1092,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../magnum/new-k8s-cluster/" class="md-nav__link">
+      <a href="../../howto/openstack/magnum/new-k8s-cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1113,7 +1022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../magnum/kubectl/" class="md-nav__link">
+      <a href="../../howto/openstack/magnum/kubectl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1189,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../neutron/new-network/" class="md-nav__link">
+      <a href="../../howto/openstack/neutron/new-network/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1210,7 +1119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../neutron/create-security-groups/" class="md-nav__link">
+      <a href="../../howto/openstack/neutron/create-security-groups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1231,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../neutron/multiple-public-ips/" class="md-nav__link">
+      <a href="../../howto/openstack/neutron/multiple-public-ips/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1252,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../neutron/vpnaas/" class="md-nav__link">
+      <a href="../../howto/openstack/neutron/vpnaas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1273,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../neutron/delete-network/" class="md-nav__link">
+      <a href="../../howto/openstack/neutron/delete-network/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1355,7 +1264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nova/new-server/" class="md-nav__link">
+      <a href="../../howto/openstack/nova/new-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1376,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nova/server-group/" class="md-nav__link">
+      <a href="../../howto/openstack/nova/server-group/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1397,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nova/config-drive/" class="md-nav__link">
+      <a href="../../howto/openstack/nova/config-drive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1418,7 +1327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nova/resize-server/" class="md-nav__link">
+      <a href="../../howto/openstack/nova/resize-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1439,7 +1348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nova/move-server-between-regions/" class="md-nav__link">
+      <a href="../../howto/openstack/nova/move-server-between-regions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1460,7 +1369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nova/boot-image-volume/" class="md-nav__link">
+      <a href="../../howto/openstack/nova/boot-image-volume/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1481,7 +1390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nova/restore-srv-to-snap/" class="md-nav__link">
+      <a href="../../howto/openstack/nova/restore-srv-to-snap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1502,7 +1411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nova/rescue-server/" class="md-nav__link">
+      <a href="../../howto/openstack/nova/rescue-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1576,7 +1485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../octavia/lbaas-tcp/" class="md-nav__link">
+      <a href="../../howto/openstack/octavia/lbaas-tcp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1597,7 +1506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../octavia/tls-lb/" class="md-nav__link">
+      <a href="../../howto/openstack/octavia/tls-lb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1618,7 +1527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../octavia/lbaas-l7pol/" class="md-nav__link">
+      <a href="../../howto/openstack/octavia/lbaas-l7pol/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1639,7 +1548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../octavia/metrics/" class="md-nav__link">
+      <a href="../../howto/openstack/octavia/metrics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1749,7 +1658,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../object-storage/s3/" class="md-nav__link ">
+            <a href="../../howto/object-storage/s3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1782,7 +1691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/s3/credentials/" class="md-nav__link">
+      <a href="../../howto/object-storage/s3/credentials/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1803,7 +1712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/s3/public-bucket/" class="md-nav__link">
+      <a href="../../howto/object-storage/s3/public-bucket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1824,7 +1733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/s3/presign/" class="md-nav__link">
+      <a href="../../howto/object-storage/s3/presign/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1845,7 +1754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/s3/expiry/" class="md-nav__link">
+      <a href="../../howto/object-storage/s3/expiry/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1866,7 +1775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/s3/object-lock/" class="md-nav__link">
+      <a href="../../howto/object-storage/s3/object-lock/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1887,7 +1796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/s3/versioning/" class="md-nav__link">
+      <a href="../../howto/object-storage/s3/versioning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1908,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/s3/sse-c/" class="md-nav__link">
+      <a href="../../howto/object-storage/s3/sse-c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1965,7 +1874,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../object-storage/swift/" class="md-nav__link ">
+            <a href="../../howto/object-storage/swift/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1998,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/swift/private-container/" class="md-nav__link">
+      <a href="../../howto/object-storage/swift/private-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2019,7 +1928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/swift/public-container/" class="md-nav__link">
+      <a href="../../howto/object-storage/swift/public-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2040,7 +1949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/swift/tempurl/" class="md-nav__link">
+      <a href="../../howto/object-storage/swift/tempurl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2061,7 +1970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/swift/expiry/" class="md-nav__link">
+      <a href="../../howto/object-storage/swift/expiry/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2082,7 +1991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../object-storage/swift/versioning/" class="md-nav__link">
+      <a href="../../howto/object-storage/swift/versioning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2141,7 +2050,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../kubernetes/" class="md-nav__link ">
+            <a href="../../howto/kubernetes/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2200,7 +2109,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../kubernetes/gardener/" class="md-nav__link ">
+            <a href="../../howto/kubernetes/gardener/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2233,7 +2142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kubernetes/gardener/create-shoot-cluster/" class="md-nav__link">
+      <a href="../../howto/kubernetes/gardener/create-shoot-cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2254,7 +2163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kubernetes/gardener/kubectl/" class="md-nav__link">
+      <a href="../../howto/kubernetes/gardener/kubectl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2275,7 +2184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kubernetes/gardener/hibernate-shoot-cluster/" class="md-nav__link">
+      <a href="../../howto/kubernetes/gardener/hibernate-shoot-cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2296,7 +2205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kubernetes/gardener/rolling-upgrades/" class="md-nav__link">
+      <a href="../../howto/kubernetes/gardener/rolling-upgrades/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2343,7 +2252,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../kubernetes/magnum/" class="md-nav__link ">
+            <a href="../../howto/kubernetes/magnum/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2438,7 +2347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../account-billing/forgot-your-password/" class="md-nav__link">
+      <a href="../../howto/account-billing/forgot-your-password/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2459,7 +2368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../account-billing/change-account-data/" class="md-nav__link">
+      <a href="../../howto/account-billing/change-account-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2480,7 +2389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../account-billing/change-credit-card/" class="md-nav__link">
+      <a href="../../howto/account-billing/change-credit-card/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2501,7 +2410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../account-billing/manage-invoices/" class="md-nav__link">
+      <a href="../../howto/account-billing/manage-invoices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2522,7 +2431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../account-billing/e-invoice/" class="md-nav__link">
+      <a href="../../howto/account-billing/e-invoice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2543,7 +2452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../account-billing/rest-invoice-data/" class="md-nav__link">
+      <a href="../../howto/account-billing/rest-invoice-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2564,7 +2473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../account-billing/delete-account/" class="md-nav__link">
+      <a href="../../howto/account-billing/delete-account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2632,7 +2541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../support/raise-issues/" class="md-nav__link">
+      <a href="../../howto/support/raise-issues/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2696,7 +2605,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../background/" class="md-nav__link ">
+            <a href="../../background/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2729,7 +2638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../background/gui-vs-api/" class="md-nav__link">
+      <a href="../../background/gui-vs-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2750,7 +2659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../background/project-deletion/" class="md-nav__link">
+      <a href="../../background/project-deletion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2771,7 +2680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../background/object-storage/" class="md-nav__link">
+      <a href="../../background/object-storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2792,7 +2701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../background/disaster-recovery/" class="md-nav__link">
+      <a href="../../background/disaster-recovery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2833,7 +2742,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../background/kubernetes/" class="md-nav__link ">
+            <a href="../../background/kubernetes/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2911,7 +2820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../background/kubernetes/gardener/autoscaling/" class="md-nav__link">
+      <a href="../../background/kubernetes/gardener/autoscaling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2932,7 +2841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../background/kubernetes/gardener/autoupgrades/" class="md-nav__link">
+      <a href="../../background/kubernetes/gardener/autoupgrades/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2953,7 +2862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../background/kubernetes/gardener/garden-linux/" class="md-nav__link">
+      <a href="../../background/kubernetes/gardener/garden-linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2974,7 +2883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../background/kubernetes/gardener/hibernation/" class="md-nav__link">
+      <a href="../../background/kubernetes/gardener/hibernation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3015,6 +2924,8 @@
       
   
   
+    
+  
   
   
     
@@ -3045,16 +2956,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3071,7 +2982,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Reference
@@ -3109,7 +3020,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/features/" class="md-nav__link ">
+            <a href="../features/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3142,7 +3053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/features/public/" class="md-nav__link">
+      <a href="../features/public/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3163,7 +3074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/features/compliant/" class="md-nav__link">
+      <a href="../features/compliant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3216,7 +3127,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/limitations/" class="md-nav__link ">
+            <a href="../limitations/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3249,7 +3160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/limitations/openstack/" class="md-nav__link">
+      <a href="../limitations/openstack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3270,7 +3181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/limitations/object-storage/" class="md-nav__link">
+      <a href="../limitations/object-storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3291,7 +3202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/limitations/kubernetes/" class="md-nav__link">
+      <a href="../limitations/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3338,7 +3249,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/flavors/" class="md-nav__link ">
+            <a href="../flavors/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3371,6 +3282,8 @@
                 
   
   
+    
+  
   
   
     
@@ -3383,16 +3296,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/volumes/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   <span class="md-ellipsis">
@@ -3404,7 +3317,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             Volumes
@@ -3446,7 +3359,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/images/" class="md-nav__link ">
+            <a href="../images/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3521,7 +3434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/quotas/openstack/" class="md-nav__link">
+      <a href="../quotas/openstack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3572,7 +3485,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/versions/" class="md-nav__link ">
+            <a href="../versions/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3605,7 +3518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/versions/public/" class="md-nav__link">
+      <a href="../versions/public/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3626,7 +3539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/versions/compliant/" class="md-nav__link">
+      <a href="../versions/compliant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3677,7 +3590,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/api/" class="md-nav__link ">
+            <a href="../api/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3728,7 +3641,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/api/cc/" class="md-nav__link ">
+            <a href="../api/cc/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3782,7 +3695,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/api/openstack/" class="md-nav__link ">
+            <a href="../api/openstack/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3844,7 +3757,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../reference/legal/" class="md-nav__link ">
+            <a href="../legal/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3911,7 +3824,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../contrib/" class="md-nav__link ">
+            <a href="../../contrib/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3944,7 +3857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contrib/issues/" class="md-nav__link">
+      <a href="../../contrib/issues/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3965,7 +3878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contrib/modifications/" class="md-nav__link">
+      <a href="../../contrib/modifications/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3986,7 +3899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contrib/quality/" class="md-nav__link">
+      <a href="../../contrib/quality/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4027,59 +3940,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#when-creating-a-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      When creating a server
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#on-the-images-tab" class="md-nav__link">
-    <span class="md-ellipsis">
-      On the Images tab
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filter-by-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filter by properties
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filter-by-tag" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filter by tag
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filter-by-name" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filter by name
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -4093,7 +3953,7 @@
                   
 
   
-    <a href="https://github.com/citynetwork/docs/edit/main/docs/howto/openstack/glance/filter.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/citynetwork/docs/edit/main/docs/reference/volumes/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -4101,67 +3961,41 @@
   
 
 
-<h1 id="listing-and-filtering-images">Listing and filtering images</h1>
-<p>You can use either the <code>openstack</code> command-line interface (CLI), or the Cleura Cloud Management Panel, to list available <a href="../../../../reference/images/">public images</a> in Cleura Cloud.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Cleura Cloud Management Panel</label><label for="__tabbed_1_2">OpenStack CLI</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<h2 id="when-creating-a-server">When creating a server</h2>
-<p>Images are sorted by their Operating System on the <em>Create a Server</em>  menu.</p>
-<p><a class="glightbox" href="../assets/image-folders-create-server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A panel displaying the images sorted by operating system during server creation." src="../assets/image-folders-create-server.png" /></a></p>
-<p><a class="glightbox" href="../assets/image-rocky-list-create-server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A panel displaying Rocky images when user descends to rocky folder on create a server screen." src="../assets/image-rocky-list-create-server.png" /></a></p>
-<h2 id="on-the-images-tab">On the Images tab</h2>
-<p>You can also see the full list of images in the <em>Images → Public Images</em> menu item.
-On this page you can filter images based on their name, UUID or even tags.</p>
-<p><a class="glightbox" href="../assets/image-rocky-list-public-images.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A public images panel that uses filtering of images by name to show all Rocky images in all regions." src="../assets/image-rocky-list-public-images.png" /></a>
-<a class="glightbox" href="../assets/image-os_version-9-list-public-images.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A public images panel that uses filtering of images by os_version tag to show all images of version 9 in all regions." src="../assets/image-os_version-9-list-public-images.png" /></a></p>
-</div>
-<div class="tabbed-block">
-<p>Using the <code>openstack image list</code> command, the CLI gives you several ways of filtering images.</p>
-<h2 id="filter-by-properties">Filter by properties</h2>
-<p>You can retrieve a filtered list of available images, based on specific image properties:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>openstack<span class="w"> </span>image<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--public<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--status<span class="w"> </span>active<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--property<span class="w"> </span><span class="nv">os_distro</span><span class="o">=</span>ubuntu<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--property<span class="w"> </span><span class="nv">os_version</span><span class="o">=</span><span class="m">20</span>.04<span class="w"> </span><span class="se">\</span>
-+--------------------------------------+---------------------------------+--------+
-<span class="go">| ID                                   | Name                            | Status |</span>
-<span class="go">+--------------------------------------+---------------------------------+--------+</span>
-<span class="go">| f0babf5c-65b6-40d7-b5ce-e60361f2cb09 | Ubuntu 20.04 Focal Fossa x86_64 | active |</span>
-<span class="go">+--------------------------------------+---------------------------------+--------+</span>
-</code></pre></div>
-<p>As shown in the example, you can specify multiple tags when filtering by properties.
-However, you cannot use properties as <em>negated</em> filters.
-For example, you cannot use the <code>--property</code> option to list public and active images that are <em>not</em> Ubuntu.</p>
-<h2 id="filter-by-tag">Filter by tag</h2>
-<p>In order to list images that match a specific tag, you can use the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>openstack<span class="w"> </span>image<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--public<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--status<span class="w"> </span>active<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--tag<span class="w"> </span>os:ubuntu<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--tag<span class="w"> </span>os_version:20.04
-<span class="go">+--------------------------------------+---------------------------------+--------+</span>
-<span class="go">| ID                                   | Name                            | Status |</span>
-<span class="go">+--------------------------------------+---------------------------------+--------+</span>
-<span class="go">| f0babf5c-65b6-40d7-b5ce-e60361f2cb09 | Ubuntu 20.04 Focal Fossa x86_64 | active |</span>
-<span class="go">+--------------------------------------+---------------------------------+--------+</span>
-</code></pre></div>
-<h2 id="filter-by-name">Filter by name</h2>
-<p>Since we aim to make image names consistent, you can also apply filtering based on image names.</p>
-<p>For example:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>openstack<span class="w"> </span>image<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--public<span class="se">\</span>
-<span class="w">  </span>--status<span class="w"> </span>active<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;Ubuntu 20.04 Focal Fossa x86_64&quot;</span>
-<span class="go">+--------------------------------------+---------------------------------+--------+</span>
-<span class="go">| ID                                   | Name                            | Status |</span>
-<span class="go">+--------------------------------------+---------------------------------+--------+</span>
-<span class="go">| f0babf5c-65b6-40d7-b5ce-e60361f2cb09 | Ubuntu 20.04 Focal Fossa x86_64 | active |</span>
-<span class="go">+--------------------------------------+---------------------------------+--------+</span>
-</code></pre></div>
-</div>
-</div>
+<h1 id="volume-types">Volume types</h1>
+<p>The following volume types are available in Cleura Cloud for persistent block storage devices (&ldquo;volumes&rdquo;) managed by OpenStack Cinder.</p>
+<p>If you create a volume without specifying a volume type, then the default volume type applies.</p>
+<table>
+<thead>
+<tr>
+<th>Volume type name</th>
+<th>Default</th>
+<th><a href="../../howto/openstack/cinder/encrypted-volumes/">Encryption</a></th>
+<th>max IOPS<sup id="fnref:iops"><a class="footnote-ref" href="#fn:iops">1</a></sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cbs</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+<td>10000</td>
+</tr>
+<tr>
+<td><code>cbs-encrypted</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td>10000</td>
+</tr>
+</tbody>
+</table>
+<p>It is possible &mdash; though somewhat involved &mdash; to <a href="../../howto/openstack/cinder/retype-volumes/">change the type of an existing volume</a> (also known as retyping).</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:iops">
+<p>The maximum IOPS specification is essentially a cap, which creates an upper bound for individual device performance under <em>ideal</em> conditions. Actual IOPS may vary based on system load and utilization. IOPS limits are only enforced in <a href="../features/public/">Cleura Public Cloud regions</a>.&#160;<a class="footnote-backref" href="#fnref:iops" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
 
@@ -4185,7 +4019,7 @@ For example, you cannot use the <code>--property</code> option to list public an
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-07-07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-18</span>
   </span>
 
     
@@ -4195,7 +4029,7 @@ For example, you cannot use the <code>--property</code> option to list public an
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-07-06</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
   </span>
 
     
@@ -4205,11 +4039,11 @@ For example, you cannot use the <code>--property</code> option to list public an
   <span class="md-source-file__fact">
     <span class="md-icon" title="Contributors">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
       
     </span>
     <nav>
-      Dmitriy Rabotyagov, Florian Haas
+      Florian Haas
     </nav>
   </span>
 
@@ -4262,10 +4096,10 @@ For example, you cannot use the <code>--property</code> option to list public an
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes", "content.action.edit"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
