@@ -99,11 +99,19 @@ On the other hand, if you prefer to work with the OpenStack CLI, please do not f
     Also, notice the _Storage classes (types)_ parameter, which actually deals with [volume types](../../../reference/volumes/index.md).
     By default, this parameter is set to _cbs_.
 
-    You may want to leave the _Disaster&nbsp;recovery_ option enabled.
+    Next, you may choose to leave the _Recovery&nbsp;service_ option enabled.
     If you do, then daily server snapshots will be created, and you will have the option for easy and fast roll-ups to previous snapshots.
-    Please be aware that leaving this option enabled increases the server's monthly estimated cost (again, it is displayed in the green rectangular area at the top).
 
-    ![Disaster recovery option](assets/new-server/shot-08.png)
+    Take note of the _Retention Days_ parameter, which by default is set to 10 days;
+    that means that each snapshot will be kept for 10 days, and only then deleted automatically.
+
+    You also have the option to enable the _Immutable_ switch.
+    By doing so, you will not be able to manually delete snapshots before the retention period is over.
+    Also, you will not be able to delete the server volume until all immutable snapshots are deleted.
+
+    Please be aware that enabling the recovery service increases the server's monthly estimated cost (again, it is displayed in the green rectangular area at the top).
+
+    ![Recovery service option](assets/new-server/shot-08.png)
 
     To control network access to the server, use the dropdown menu to the right of [_Security Groups_](../neutron/create-security-groups.md) and choose one.
 
