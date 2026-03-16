@@ -1,30 +1,47 @@
 ---
-description: What is the Disaster Recovery feature and why you want it
+description: What is the recovery service feature and why you want it
 ---
-# Disaster recovery
+# Recovery service
 
-When you [create a new server](../howto/openstack/nova/new-server.md) in {{brand}} you will notice an option named **Disaster recovery**, which is enabled by default.
+When you [create a new server](../howto/openstack/nova/new-server.md) in {{brand}} you will notice an option named **Recovery service**, which is enabled by default.
 
-![Disaster recovery is enabled by default for new servers](assets/disaster-recovery-option-on-by-default.png)
+![Recovery service is enabled by default for new servers](assets/disaster-recovery-option-on-by-default.png)
 
 Even if you choose to disable it for a particular server, keep in mind that you have the option to enable it at a later time.
 
-![The disaster recovery feature can be manually activated for any server](assets/disaster-recovery-option-manual-activation.png)
+![The recovery service feature can be manually activated for any server](assets/disaster-recovery-option-manual-activation.png)
 
 In the following, we explain what this option does, how it works in the background, and why you should consider enabling it.
 
 ## What it is
 
-The *Disaster Recovery* (DR) feature is available via the {{gui}} and applies to servers and volumes that use our [Ceph](https://docs.ceph.com/) backend.
+The *recovery service* feature is available via the {{gui}} and applies to servers and volumes that use our [Ceph](https://docs.ceph.com/) backend.
 That would be **all** servers but the ones of the `s` [flavor](../reference/flavors/index.md#compute-tiers).
 
 ## How it works
 
-As soon as you enable DR for a server or a single volume, you start getting snapshots for the corresponding [*RADOS Block Device* (RBD)](https://docs.ceph.com/en/latest/glossary/#term-Ceph-Block-Device) image.
-Those snapshots are created automatically once per day, and you always have the snapshots of the last 10 days.
+As soon as you enable the recovery service for a server or a single volume, you start getting snapshots for the corresponding [*RADOS Block Device* (RBD)](https://docs.ceph.com/en/latest/glossary/#term-Ceph-Block-Device) image.
 
-Please keep in mind that all RBD snapshots are created in the same Ceph cluster and are not replicated remotely.
-If, for any reason, you delete the original volume, then all snapshots will also be deleted, and the snapshot creation schedule will be canceled immediately.
+Those snapshots are created automatically once per day.
+By default, you have the snapshots of the last 10 days.
+Optionally, you may choose to keep snapshots for the past 30 days.
+The cost of a 30-day snapshot retention is 2&times; (**not** 3&times;) the cost of a 10-day snapshot retention.
+
+You can also make the snapshots immutable.
+In that case, you will not be able to delete snapshots during the retention period manually.
+
+Keep in mind that you cannot delete a volume with snapshots.
+So, as an example, if you have chosen a retention period of 30 days and also enabled immutability, then you will not be able to delete the volume before 30 days have passed.
+
+At any time, you may disable the recovery service, modify the retention period, or disable immutability for snapshots.
+
+![Recovery service, retention period, and immutability controls](assets/recovery-service-controls.png)
+
+Let's say, for instance, that you have enabled the recovery service and also the immutability feature for snapshots.
+At some point, you want to change the retention period or disable immutability altogether;
+you can do any of that.
+Later on, you decide you do not need the volume anymore;
+you disable the recovery service, wait for 10 or 30 days, and then delete the volume.
 
 ## Why enable it
 
@@ -34,7 +51,7 @@ Then, one of your options would be to [go back in time](../howto/openstack/nova/
 
 ## Restoration time
 
-You should know that the DR feature creates *point-in-time* snapshots on the storage level.
+You should know that the recovery service feature creates *point-in-time* snapshots on the storage level.
 The time required to restore a server to a particular snapshot depends on its size.
 During restoration, the server is shut off.
 After the restore, you need to power the server back on manually.
