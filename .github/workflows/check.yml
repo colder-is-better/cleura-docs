@@ -12,9 +12,18 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install tox
-      - name: Test with tox
+      - env:
+          DOCS_SITE_URL: "https://docs.cleura.cloud/${{ matrix.region }}"
+        name: "Check docs for ${{ matrix.region }}"
         run: |
           tox -e check-prod
+    strategy:
+      fail-fast: false
+      matrix:
+        region:
+          - 'kna1'
+          - 'sto2'
+          - 'fra1'
 
 name: check
 
