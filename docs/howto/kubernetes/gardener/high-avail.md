@@ -27,6 +27,9 @@ A vertical pane titled _Modify Gardener Shoot Cluster_ slides over from the righ
 In it, you see the disabled option _Enable Highly Available Control Plane_.
 Click on it to enable HA for the control plane of the shoot cluster.
 
+As soon as you enable HA, Control Plane components spread out and live across all Availability Zones.
+Then, in case of an Availability Zone outage, the Control Plane for the cluster remains available.
+
 ![Notice the option for enabling control plane HA](assets/shoot-enable-ha-03.png)
 
 Before the change is applied, a warning appears:
