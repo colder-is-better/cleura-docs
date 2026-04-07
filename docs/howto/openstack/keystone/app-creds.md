@@ -278,7 +278,7 @@ You need to instantiate four `OS_` variables:
 Create a new file named `acRC`, with the following content:
 
 ```bash
-export OS_AUTH_URL=https://{{api_region|lower}}.{{api_domain}}:5000
+export OS_AUTH_URL=https://identity.{{api_region|lower}}.{{api_domain}}
 export OS_AUTH_TYPE=v3applicationcredential
 export OS_APPLICATION_CREDENTIAL_ID=3e04d504d754445e8b8d503e0e7af3c5
 export OS_APPLICATION_CREDENTIAL_SECRET=<value_of_PRETTY_GOOD_SECRET>
