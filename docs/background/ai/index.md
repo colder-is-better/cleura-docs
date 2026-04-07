@@ -4,6 +4,9 @@ description: Cleura AI enables organisations to deploy and consume large languag
 
 # {{brand_ai}}
 
+??? note "Invite-only access"
+    Access to {{brand_ai}} services is currently invite-only.
+
 {{page.meta.description}}
 
 Large Language Models ([LLMs](https://en.wikipedia.org/wiki/Large_language_model)) represent a specific subset of artificial intelligence ([AI](https://en.wikipedia.org/wiki/Artificial_intelligence)), focused on processing and generating human language.
