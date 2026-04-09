@@ -59,7 +59,7 @@ Please find here all the details regarding the available OpenAI-compatible API p
 
 {{company}} maintains a curated selection of open-source models, optimised for a shared GPU pool.
 Those models are selected based on community adoption, performance characteristics, and enterprise suitability.
-The model catalogue updates regularly as new versions are released.
+The [model catalogue](../../reference/ai/llms.md) updates regularly as new versions are released.
 
 ## Data privacy and compliance
 
