@@ -23,6 +23,9 @@ Click the *Deploy this App* button to start the deployment process.
 ![Start the firewall deployment process](assets/new-firewall/netwall-02_dark.png#only-dark)
 
 The firewall is hosted on a [Nova VM](../../openstack/nova/new-server.md), so now you may select a region, a name, a flavor, a public network, and a keypair for it.
+Regarding the keypair, Clavister NetWall works with old [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) keys only, so make sure you have at least one such key in the region you are deploying in.
+More specifically, make sure you have used the `ssh-keygen` tool with the `-t ecdsa` parameter, to create an ECDSA keypair locally.
+Then, [create an OpenStack keypair](../../openstack/nova/managing-keypairs.md) by specifying the public key of the local ECDSA keypair.
 
 Read and agree to the *Terms and Conditions.*
 When you are ready, click the *Create* button.
