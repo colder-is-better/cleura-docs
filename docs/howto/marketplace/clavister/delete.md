@@ -8,7 +8,7 @@ This short guide covers the deletion of a self-hosted Clavister NetWall deployme
 
 In the left vertical pane of the {{gui}}, expand the *Marketplace* category and click on *Provisioned Apps*.
 All your deployed applications, including the one you are about to delete, are listed in the central pane.
-Notice the orange :material-dots-horizontal-circle: icon at the right of the application row.
+Notice the :material-dots-horizontal-circle: icon at the right of the application row.
 Click on it, and from the drop-down menu that appears, select *Delete Provisioned App*.
 
 ![Request the deletion of Clavister NetWall](assets/delete-firewall/firewall-delete-01_light.png#only-light)
@@ -16,7 +16,7 @@ Click on it, and from the drop-down menu that appears, select *Delete Provisione
 
 A new window named *About to delete a Provisioned App* appears.
 Make sure it refers to the Clavister NetWall deployment you wish to delete.
-When you are ready, click on the red *Yes, Delete* button.
+When you are ready, click on the *Yes, Delete* button.
 
 ![Make sure you are about to delete Clavister NetWall](assets/delete-firewall/firewall-delete-02_light.png#only-light)
 ![Make sure you are about to delete Clavister NetWall](assets/delete-firewall/firewall-delete-02_dark.png#only-dark)
