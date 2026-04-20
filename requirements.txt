@@ -9,3 +9,4 @@ mkdocs-material>=9.5.3
 mkdocs-redirects
 mkdocs<=1.6.1
 pillow
+tzdata
