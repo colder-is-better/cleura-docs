@@ -12,13 +12,13 @@ To proceed, make sure you have an [account in {{brand}}](../../getting-started/c
 
 In the left vertical pane of the {{gui}}, expand the *Marketplace* category and click on *Discover Apps and Services*.
 In the central pane, you will see all available applications and services.
-Locate the *Grafana* box and click the green *View* button.
+Locate the *Grafana* box and click the *View* button.
 
 ![Select the Grafana application](assets/new-grafana/grafana-01_light.png#only-light)
 ![Select the Grafana application](assets/new-grafana/grafana-01_dark.png#only-dark)
 
 You will see the *Grafana* information page, where you can learn more about its features, and obtain pricing information.
-Click the orange *Deploy this App* button to start the deployment process.
+Click the *Deploy this App* button to start the deployment process.
 
 ![Start the Grafana deployment process](assets/new-grafana/grafana-02_light.png#only-light)
 ![Start the Grafana deployment process](assets/new-grafana/grafana-02_dark.png#only-dark)
@@ -30,7 +30,7 @@ Regarding the security group, [make sure it includes a rule](../../openstack/neu
 ![Specify the characteristics of the particular Grafana deployment](assets/new-grafana/grafana-03_dark.png#only-dark)
 
 Read and agree to the *Terms and Conditions.*
-When you are ready, click the green *Create* button.
+When you are ready, click the *Create* button.
 
 ![Read and agree to the Terms and Conditions, then click the Create button](assets/new-grafana/grafana-04_light.png#only-light)
 ![Read and agree to the Terms and Conditions, then click the Create button](assets/new-grafana/grafana-04_dark.png#only-dark)
@@ -43,7 +43,7 @@ The animated icon at the left marks the deployment progress.
 ![Check the deployment progress](assets/new-grafana/grafana-05_light.png#only-light)
 ![Check the deployment progress](assets/new-grafana/grafana-05_dark.png#only-dark)
 
-When the deployment is complete, you will see a white check mark in a green circle.
+When the deployment is complete, you will see a check mark in a circle.
 
 ![Grafana is deployed](assets/new-grafana/grafana-06_light.png#only-light)
 ![Grafana is deployed](assets/new-grafana/grafana-06_dark.png#only-dark)
@@ -61,7 +61,7 @@ We recommend you create a new entry in your password manager, and populate all n
 
 For the preset password, click the icon in the *Action* column of the *admin_password* row.
 A pop-up window appears.
-Click the blue *Copy Output!* button to copy the password into the clipboard.
+Click the *Copy Output!* button to copy the password into the clipboard.
 When ready, click the *Back* button to close the window.
 
 ![Reveal the administrator's password](assets/new-grafana/grafana-dashboard-02_light.png#only-light)
