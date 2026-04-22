@@ -15,10 +15,12 @@ In the central pane, you will see all available applications and services.
 Locate the *Harbor* box and click the green *View* button.
 
 ![Select the Harbor application](assets/new-harbor/harbor-01.png)
+![Select the Harbor application](assets/new-harbor/harbor-01.png)
 
 You will see the *Harbor* information page, where you can learn more about its features, and obtain pricing information.
 Click the orange *Deploy this App* button to start the deployment process.
 
+![Start the Harbor deployment process](assets/new-harbor/harbor-02.png)
 ![Start the Harbor deployment process](assets/new-harbor/harbor-02.png)
 
 The Harbor application is hosted on a [Nova VM](../../openstack/nova/new-server.md), so now you may select a region, a name, a flavor, a public network, a keypair, and a security group for it.

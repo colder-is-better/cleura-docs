@@ -11,14 +11,17 @@ All your deployed applications, including the one you are about to delete, are l
 Notice the orange :material-dots-horizontal-circle: icon at the right of the application row.
 Click on it, and from the drop-down menu that appears, select *Delete Provisioned App*.
 
-![Request the deletion of Prometheus](assets/delete-prometheus/prometheus-delete-01.png)
+![Request the deletion of Prometheus](assets/delete-prometheus/prometheus-delete-01_light.png#only-light)
+![Request the deletion of Prometheus](assets/delete-prometheus/prometheus-delete-01_dark.png#only-dark)
 
 A new window named *About to delete a Provisioned App* appears.
 Make sure it refers to the Prometheus deployment you wish to delete.
 When you are ready, click on the red *Yes, Delete* button.
 
-![Make sure you are about to delete Prometheus](assets/delete-prometheus/prometheus-delete-02.png)
+![Make sure you are about to delete Prometheus](assets/delete-prometheus/prometheus-delete-02_light.png#only-light)
+![Make sure you are about to delete Prometheus](assets/delete-prometheus/prometheus-delete-02_dark.png#only-dark)
 
 After a few seconds, your Prometheus deployment will be deleted, and that fact will be reflected in the list of provisioned applications.
 
-![Prometheus is deleted](assets/delete-prometheus/prometheus-delete-03.png)
+![Prometheus is deleted](assets/delete-prometheus/prometheus-delete-03_light.png#only-light)
+![Prometheus is deleted](assets/delete-prometheus/prometheus-delete-03_dark.png#only-dark)
