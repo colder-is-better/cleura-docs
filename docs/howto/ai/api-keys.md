@@ -9,7 +9,7 @@ Whether you want to integrate a specific set of {{brand_ai}} LLMs into your appl
 
 Expand the _AI_ section and select _API Keys_.
 On the main pane, all existing API keys appear.
-To create a new one, click the orange _Create API Key_ button.
+To create a new one, click the _Create API Key_ button.
 
 ![Creating a new API key for a set of LLMs](assets/create-api-key-01_light.png#only-light)
 ![Creating a new API key for a set of LLMs](assets/create-api-key-01_dark.png#only-dark)
@@ -25,7 +25,7 @@ Also, restricting API key access to an IPv6 source network is not possible.
 Finally, you can set an expiration date for the API key;
 beyond that date, access to any model using that key will not be possible.
 
-When you are ready, click the green _Create_ button.
+When you are ready, click the _Create_ button.
 
 ![Set key properties and create the key](assets/create-api-key-02_light.png#only-light)
 ![Set key properties and create the key](assets/create-api-key-02_dark.png#only-dark)
@@ -51,7 +51,7 @@ You will then see all the API keys, including the one you just created, listed o
 ## Deleting API keys
 
 To delete an API key, first go to the _API Keys_ pane of the {{gui}}.
-Locate the key you wish to delete, click the orange :material-dots-horizontal-circle: icon at the right of its row, and select _Delete_.
+Locate the key you wish to delete, click the :material-dots-horizontal-circle: icon at the right of its row, and select _Delete_.
 
 ![Locate the API key you wish to delete](assets/delete-api-key-01_light.png#only-light)
 ![Locate the API key you wish to delete](assets/delete-api-key-01_dark.png#only-dark)
@@ -63,7 +63,7 @@ If you are sure you do not need the key anymore, click the _OK_ button.
 ![Confirm API key deletion](assets/delete-api-key-02_dark.png#only-dark)
 
 This deletes the API key.
-The list of keys is now shortened by one, and you get a confirmation on a green bubble at the bottom of the page.
+The list of keys is now shortened by one, and you get a confirmation on a bubble at the bottom of the page.
 
 ![The API key has been deleted](assets/delete-api-key-03_light.png#only-light)
 ![The API key has been deleted](assets/delete-api-key-03_dark.png#only-dark)
