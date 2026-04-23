@@ -1,4 +1,4 @@
-title: Compute (Nova)
+---
 nav:
   - index.md
   - new-server.md
@@ -9,3 +9,4 @@ nav:
   - move-server-between-regions.md
   - restore-srv-to-snap.md
   - rescue-server.md
+title: Compute (Nova)
