@@ -12,7 +12,7 @@ All available LLMs are on the main pane.
 
 ## Interacting with a model
 
-To start interacting with a specific model, click the orange :material-dots-horizontal-circle: icon at the right of its row and select _Playground_.
+To start interacting with a specific model, click the :material-dots-horizontal-circle: icon at the right of its row and select _Playground_.
 
 ![Select a model and go to the interactive playground](assets/model-playground_light.png#only-light)
 ![Select a model and go to the interactive playground](assets/model-playground_dark.png#only-dark)
@@ -24,7 +24,7 @@ The first time you select a model, a pop-up window titled _Playground Terms_ app
 
 Read the two short paragraphs regarding the terms.
 Optionally, toggle the _Remember my choice on this browser_ option.
-Provided you agree with the terms, click the orange _Accept & Create Playground [API Key](api-keys.md)_ button to proceed.
+Provided you agree with the terms, click the _Accept & Create Playground [API Key](api-keys.md)_ button to proceed.
 
 ## Interacting with a model
 
