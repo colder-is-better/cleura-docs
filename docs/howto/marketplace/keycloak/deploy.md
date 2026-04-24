@@ -12,13 +12,13 @@ To proceed, make sure you have an [account in {{brand}}](../../getting-started/c
 
 In the left vertical pane of the {{gui}}, expand the *Marketplace* category and click on *Discover Apps and Services*.
 In the central pane, you will see all available applications and services.
-Locate the *Keycloak* box and click the green *View* button.
+Locate the *Keycloak* box and click the *View* button.
 
 ![Select the Keycloak application](assets/new-keycloak/keycloak-01_light.png#only-light)
 ![Select the Keycloak application](assets/new-keycloak/keycloak-01_dark.png#only-dark)
 
 You will see the *Keycloak* information page, where you can learn more about its features, and obtain pricing information.
-Click the orange *Deploy this App* button to start the deployment process.
+Click the *Deploy this App* button to start the deployment process.
 
 ![Start the Keycloak deployment process](assets/new-keycloak/keycloak-02_light.png#only-light)
 ![Start the Keycloak deployment process](assets/new-keycloak/keycloak-02_dark.png#only-dark)
@@ -32,7 +32,7 @@ Optionally, select one of the available Keycloak versions.
 ![Specify the characteristics of the particular Keycloak deployment](assets/new-keycloak/keycloak-03_dark.png#only-dark)
 
 Then, read and agree to the *Terms and Conditions.*
-When you are ready, click the green *Create* button.
+When you are ready, click the *Create* button.
 
 ![Read and agree to the Terms and Conditions, and click the Create button](assets/new-keycloak/keycloak-04_light.png#only-light)
 ![Read and agree to the Terms and Conditions, and click the Create button](assets/new-keycloak/keycloak-04_dark.png#only-dark)
@@ -45,7 +45,7 @@ The animated icon at the left marks the deployment progress.
 ![Check the deployment progress](assets/new-keycloak/keycloak-05_light.png#only-light)
 ![Check the deployment progress](assets/new-keycloak/keycloak-05_dark.png#only-dark)
 
-When the deployment is complete, you will see a white check mark in a green circle.
+When the deployment is complete, you will see a check mark in a circle.
 
 ![Keycloak is deployed](assets/new-keycloak/keycloak-06_light.png#only-light)
 ![Keycloak is deployed](assets/new-keycloak/keycloak-06_dark.png#only-dark)
@@ -63,7 +63,7 @@ We recommend you create a new entry in your password manager and populate all ne
 
 For the preset password, click the icon in the *Action* column of the *admin_credentials* row.
 A pop-up window appears.
-Click the blue *Copy Output!* button to copy all data below *Output* into the clipboard.
+Click the *Copy Output!* button to copy all data below *Output* into the clipboard.
 Temporarily paste that data into a text editor, and use the password for your password manager entry.
 When ready, click the *Back* button to close the window.
 
