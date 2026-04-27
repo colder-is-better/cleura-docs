@@ -23,5 +23,5 @@ When you are ready, click on the *Yes, Delete* button.
 
 After a few seconds, your Taiga deployment will be deleted, and that fact will be reflected in the list of provisioned applications.
 
-![Taiga is deleted](assets/delete-taiga/taiga-delete-03_light.png#only-light)
-![Taiga is deleted](assets/delete-taiga/taiga-delete-03_dark.png#only-dark)
+![Taiga is deleted](../assets/marketplace_empty_list_light.png#only-light)
+![Taiga is deleted](../assets/marketplace_empty_list_dark.png#only-dark)

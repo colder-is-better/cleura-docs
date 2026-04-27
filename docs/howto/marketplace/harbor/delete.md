@@ -23,5 +23,5 @@ When you are ready, click on the *Yes, Delete* button.
 
 After a few seconds, your Harbor deployment will be deleted, and that fact will be reflected in the list of provisioned applications.
 
-![Harbor is deleted](assets/delete-harbor/harbor-delete-03_light.png#only-light)
-![Harbor is deleted](assets/delete-harbor/harbor-delete-03_dark.png#only-dark)
+![Harbor is deleted](../assets/marketplace_empty_list_light.png#only-light)
+![Harbor is deleted](../assets/marketplace_empty_list_dark.png#only-dark)

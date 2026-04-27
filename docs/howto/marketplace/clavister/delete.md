@@ -23,5 +23,5 @@ When you are ready, click on the *Yes, Delete* button.
 
 After a few seconds, Clavister NetWall will be deleted, and that fact will be reflected in the list of provisioned applications.
 
-![Clavister NetWall is deleted](assets/delete-firewall/firewall-delete-03_light.png#only-light)
-![Clavister NetWall is deleted](assets/delete-firewall/firewall-delete-03_dark.png#only-dark)
+![Clavister NetWall is deleted](../assets/marketplace_empty_list_light.png#only-light)
+![Clavister NetWall is deleted](../assets/marketplace_empty_list_dark.png#only-dark)

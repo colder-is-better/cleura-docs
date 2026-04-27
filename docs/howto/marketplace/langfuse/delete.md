@@ -23,5 +23,5 @@ When you are ready, click on the *Yes, Delete* button.
 
 After a few seconds, your Langfuse deployment will be deleted, and that fact will be reflected in the list of provisioned applications.
 
-![Langfuse is deleted](assets/delete-langfuse/langfuse-delete-03_light.png#only-light)
-![Langfuse is deleted](assets/delete-langfuse/langfuse-delete-03_dark.png#only-dark)
+![Langfuse is deleted](../assets/marketplace_empty_list_light.png#only-light)
+![Langfuse is deleted](../assets/marketplace_empty_list_dark.png#only-dark)

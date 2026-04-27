@@ -23,5 +23,5 @@ When you are ready, click on the *Yes, Delete* button.
 
 After a few seconds, your Keycloak deployment will be deleted, and that fact will be reflected in the list of provisioned applications.
 
-![Keycloak is deleted](assets/delete-keycloak/keycloak-delete-03_light.png#only-light)
-![Keycloak is deleted](assets/delete-keycloak/keycloak-delete-03_dark.png#only-dark)
+![Keycloak is deleted](../assets/marketplace_empty_list_light.png#only-light)
+![Keycloak is deleted](../assets/marketplace_empty_list_dark.png#only-dark)

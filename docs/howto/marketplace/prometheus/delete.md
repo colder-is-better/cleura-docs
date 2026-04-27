@@ -23,5 +23,5 @@ When you are ready, click on the *Yes, Delete* button.
 
 After a few seconds, your Prometheus deployment will be deleted, and that fact will be reflected in the list of provisioned applications.
 
-![Prometheus is deleted](assets/delete-prometheus/prometheus-delete-03_light.png#only-light)
-![Prometheus is deleted](assets/delete-prometheus/prometheus-delete-03_dark.png#only-dark)
+![Prometheus is deleted](../assets/marketplace_empty_list_light.png#only-light)
+![Prometheus is deleted](../assets/marketplace_empty_list_dark.png#only-dark)
