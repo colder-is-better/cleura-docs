@@ -12,13 +12,13 @@ To proceed, make sure you have an [account in {{brand}}](../../getting-started/c
 
 In the left vertical pane of the {{gui}}, expand the *Marketplace* category and click on *Discover Apps and Services*.
 In the central pane, you will see all available applications and services.
-Locate the *Langfuse* box and click the green *View* button.
+Locate the *Langfuse* box and click the *View* button.
 
 ![Select the Langfuse application](assets/new-langfuse/langfuse-01_light.png#only-light)
 ![Select the Langfuse application](assets/new-langfuse/langfuse-01_dark.png#only-dark)
 
 You will see the *Langfuse* information page, where you can learn more about its features and system requirements.
-Click the orange *Deploy this App* button to start the deployment process.
+Click the *Deploy this App* button to start the deployment process.
 
 ![Start the Langfuse deployment process](assets/new-langfuse/langfuse-02_light.png#only-light)
 ![Start the Langfuse deployment process](assets/new-langfuse/langfuse-02_dark.png#only-dark)
@@ -35,7 +35,7 @@ Additionally, fill in some necessary parameters for Langfuse, like the initial a
 ![Fill-in necessary parameters for Langfuse](assets/new-langfuse/langfuse-04_dark.png#only-dark)
 
 Then, read and agree to the *Terms and Conditions.*
-When you are ready, click the green *Create* button.
+When you are ready, click the *Create* button.
 
 ![Read and agree to the Terms and Conditions, then click the Create button](assets/new-langfuse/langfuse-05_light.png#only-light)
 ![Read and agree to the Terms and Conditions, then click the Create button](assets/new-langfuse/langfuse-05_dark.png#only-dark)
@@ -48,7 +48,7 @@ The animated icon on the left marks the deployment progress.
 ![Check the deployment progress](assets/new-langfuse/langfuse-06_light.png#only-light)
 ![Check the deployment progress](assets/new-langfuse/langfuse-06_dark.png#only-dark)
 
-When the deployment is complete, you will see a white check mark in a green circle.
+When the deployment is complete, you will see a check mark in a circle.
 
 ![Langfuse is deployed](assets/new-langfuse/langfuse-07_light.png#only-light)
 ![Langfuse is deployed](assets/new-langfuse/langfuse-07_dark.png#only-dark)
@@ -64,7 +64,7 @@ Click on the Langfuse row to expand it, and select the *Stack Output* tab.
 
 In the *public_url* row, click the icon in the *Action* column.
 A pop-up window appears.
-Click the blue *Copy Output!* button to copy the URL displayed in the *Output* box to the clipboard.
+Click the *Copy Output!* button to copy the URL displayed in the *Output* box to the clipboard.
 Then, paste that password into a new text editor window, but don't save it in a new file.
 Instead, we recommend you create a new entry in your password manager of choice and move the URL there.
 Close the pop-up window by clicking on the *Back* button.
