@@ -11,14 +11,17 @@ All your deployed applications, including the one you are about to delete, are l
 Notice the orange :material-dots-horizontal-circle: icon at the right of the application row.
 Click on it, and from the drop-down menu that appears, select *Delete Provisioned App*.
 
-![Request the deletion of Langfuse](assets/delete-langfuse/langfuse-delete-01.png)
+![Request the deletion of Langfuse](assets/delete-langfuse/langfuse-delete-01_light.png#only-light)
+![Request the deletion of Langfuse](assets/delete-langfuse/langfuse-delete-01_dark.png#only-dark)
 
 A new window named *About to delete a Provisioned App* appears.
 Make sure it refers to the Langfuse deployment you wish to delete.
 When you are ready, click on the red *Yes, Delete* button.
 
-![Make sure you are about to delete Langfuse](assets/delete-langfuse/langfuse-delete-02.png)
+![Make sure you are about to delete Langfuse](assets/delete-langfuse/langfuse-delete-02_light.png#only-light)
+![Make sure you are about to delete Langfuse](assets/delete-langfuse/langfuse-delete-02_dark.png#only-dark)
 
 After a few seconds, your Langfuse deployment will be deleted, and that fact will be reflected in the list of provisioned applications.
 
-![Langfuse is deleted](assets/delete-langfuse/langfuse-delete-03.png)
+![Langfuse is deleted](assets/delete-langfuse/langfuse-delete-03_light.png#only-light)
+![Langfuse is deleted](assets/delete-langfuse/langfuse-delete-03_dark.png#only-dark)
