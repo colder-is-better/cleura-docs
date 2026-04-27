@@ -12,13 +12,13 @@ To proceed, make sure you have an [account in {{brand}}](../../getting-started/c
 
 In the left vertical pane of the {{gui}}, expand the *Marketplace* category and click on *Discover Apps & Services*.
 In the central pane, you will see all available applications and services.
-Locate the *Open WebUI* box and click the green *View* button.
+Locate the *Open WebUI* box and click the *View* button.
 
 ![Select the Open WebUI application](assets/new-openwebui/openwebui-01_light.png#only-light)
 ![Select the Open WebUI application](assets/new-openwebui/openwebui-01_dark.png#only-dark)
 
 You will see the *Open WebUI* information page, where you can learn more about its features and system requirements.
-Click the orange *Deploy this App* button to start the deployment process.
+Click the *Deploy this App* button to start the deployment process.
 
 ![Start the Open WebUI deployment process](assets/new-openwebui/openwebui-02_light.png#only-light)
 ![Start the Open WebUI deployment process](assets/new-openwebui/openwebui-02_dark.png#only-dark)
@@ -31,7 +31,7 @@ The Open WebUI application is hosted on a [Nova VM](../../openstack/nova/new-ser
 Select a security group [that allows incoming connections to port 80/TCP](../../openstack/neutron/create-security-groups.md), and choose a network to connect the service to.
 
 Then, read and agree to the *Terms and Conditions.*
-When you are ready, click the green *Create* button.
+When you are ready, click the *Create* button.
 
 ![Finish up configuring the particular Open WebUI deployment](assets/new-openwebui/openwebui-04_light.png#only-light)
 ![Finish up configuring the particular Open WebUI deployment](assets/new-openwebui/openwebui-04_dark.png#only-dark)
@@ -44,7 +44,7 @@ The animated icon on the left marks the deployment progress.
 ![Check the deployment progress](assets/new-openwebui/openwebui-05_light.png#only-light)
 ![Check the deployment progress](assets/new-openwebui/openwebui-05_dark.png#only-dark)
 
-When the deployment is complete, you will see a white check mark in a green circle.
+When the deployment is complete, you will see a check mark in a circle.
 
 ![Open WebUI is deployed](assets/new-openwebui/openwebui-06_light.png#only-light)
 ![Open WebUI is deployed](assets/new-openwebui/openwebui-06_dark.png#only-dark)
@@ -59,7 +59,7 @@ Go to the *Provisioned Apps* pane, click on the Open WebUI row to expand it, and
 
 In the *public_url* row, click the icon in the *Action* column.
 A pop-up window appears.
-Click the blue *Copy Output!* button to copy the URL displayed in the *Output* box to the clipboard.
+Click the *Copy Output!* button to copy the URL displayed in the *Output* box to the clipboard.
 Jot it down somewhere, or create a new bookmark off of it.
 Close the pop-up window by clicking on the *Back* button.
 
