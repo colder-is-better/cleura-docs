@@ -2,7 +2,6 @@
 nav:
   - index.md
   - new-server.md
-  - new-server-cnw.md
   - server-group.md
   - config-drive.md
   - resize-server.md
