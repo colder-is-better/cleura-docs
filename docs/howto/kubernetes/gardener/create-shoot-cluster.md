@@ -93,7 +93,7 @@ Also, do not bother with the *[Hibernation](hibernate-shoot-cluster.md) Schedule
 
 By default, you can access your shoot clusters from anywhere on the internet.
 Still, you may choose to restrict cluster access, permitting it *only* from certain networks.
-The allowed networks are described in [CIDR&nbsp;notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation), and you can define one or more by clicking on the green *Set CIDRs...* button.
+The allowed networks are described in [CIDR&nbsp;notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation), and you can define one or more by clicking on the *Set CIDRs...* button.
 
 ![You may optionally define networks to allow cluster access from](assets/create-shoot-11_light.png#only-light)
 ![You may optionally define networks to allow cluster access from](assets/create-shoot-11_dark.png#only-dark)
@@ -111,7 +111,7 @@ When populating the list of allowed networks, include the {{ gui_management_serv
 ![You can define more than one networks, from which access to the cluster is allowed](assets/create-shoot-13_light.png#only-light)
 ![You can define more than one networks, from which access to the cluster is allowed](assets/create-shoot-13_dark.png#only-dark)
 
-When you are ready, click the green *Create* button at the bottom of the pane.
+When you are ready, click the *Create* button at the bottom of the pane.
 
 ![About to create a new {{k8s_management_service}} Shoot Cluster](assets/create-shoot-14_light.png#only-light)
 ![About to create a new {{k8s_management_service}} Shoot Cluster](assets/create-shoot-14_dark.png#only-dark)
@@ -143,7 +143,7 @@ For instance, click the *Details* tab to get networking information about the wo
 ![Details regarding the new cluster](assets/create-shoot-16_dark.png#only-dark)
 
 Next, go to the *Monitoring* tab.
-There, you will notice two orange buttons:
+There, you will notice two buttons:
 one for launching [Prometheus](https://prometheus.io), and one for launching [Plutono](https://github.com/credativ/plutono).
 
 ![Monitoring tab for launching Prometheus or Plutono](assets/create-shoot-17_light.png#only-light)
@@ -152,9 +152,9 @@ one for launching [Prometheus](https://prometheus.io), and one for launching [Pl
 As an example, we have clicked the button for Plutono.
 Before launching the dashboard, a pop-up window appears.
 This shows the default username (`admin`), and the automatically generated *masked* password.
-You get this pop-up every time you click on either of the orange buttons.
+You get this pop-up every time you click on either of the buttons.
 In any case, to copy the password into the clipboard, click the related button shown below.
-Then, click the orange button labeled *Open Dashboard*.
+Then, click the button labeled *Open Dashboard*.
 
 ![Copy the Plutono password](assets/create-shoot-18_light.png#only-light)
 ![Copy the Plutono password](assets/create-shoot-18_dark.png#only-dark)
