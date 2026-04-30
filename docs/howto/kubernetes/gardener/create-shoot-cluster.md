@@ -25,7 +25,6 @@ At the top right-hand side of the central pane, click *Create Kubernetes clust
 A new pane named *Create {{k8s_management_service}} Shoot Cluster* slides over from the right-hand side of the browser.
 Type in a name for the new shoot cluster, and select a region.
 Also, select the version of Kubernetes the new cluster will be running.
-In the example below, we have chosen version 1.33.7.
 Please note the *Load balancer provider* parameter, which is already set.
 By turning on the setting below, which is by default disabled, you may enable high availability for the **control plane** of the new cluster.
 
