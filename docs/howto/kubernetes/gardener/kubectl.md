@@ -21,20 +21,24 @@ To get a kubeconfig file for a shoot cluster, in the {{gui}} click on the cluste
 
 Notice that you may set the duration of the kubeconfig file validity.
 
-![KubeConfig tab in {{k8s_management_service}} Shoot view](assets/shoot_kubeconfig_cert_01.png)
+![KubeConfig tab in {{k8s_management_service}} Shoot view](assets/shoot_kubeconfig_cert_01_light.png#only-light)
+![KubeConfig tab in {{k8s_management_service}} Shoot view](assets/shoot_kubeconfig_cert_01_dark.png#only-dark)
 
 The default validity period is one hour, but you may use the drop-down menu to select a different duration.
 
-![Select a validity period for kubeconfig](assets/shoot_kubeconfig_cert_02.png)
+![Select a validity period for kubeconfig](assets/shoot_kubeconfig_cert_02_light.png#only-light)
+![Select a validity period for kubeconfig](assets/shoot_kubeconfig_cert_02_dark.png#only-dark)
 
 When satisfied with the duration, click the green button labeled *Generate config*.
 
-![Generate a certificate-based kubeconfig](assets/shoot_kubeconfig_cert_03.png)
+![Generate a certificate-based kubeconfig](assets/shoot_kubeconfig_cert_03_light.png#only-light)
+![Generate a certificate-based kubeconfig](assets/shoot_kubeconfig_cert_03_dark.png#only-dark)
 
 Right below, you will see the contents of your dynamically generated kubeconfig.
 To get the file, click the blue button labeled *Download KubeConfig*.
 
-![Download the newly generated kubeconfig](assets/shoot_kubeconfig_cert_04.png)
+![Download the newly generated kubeconfig](assets/shoot_kubeconfig_cert_04_light.png#only-light)
+![Download the newly generated kubeconfig](assets/shoot_kubeconfig_cert_04_dark.png#only-dark)
 
 In the default download folder of your local user account, you will get a configuration file named like so:
 
@@ -155,7 +159,8 @@ kubernetes    ClusterIP      100.64.0.1     <none>        443/TCP        49m
 Open a browser and navigate to `http://198.51.100.42` (substituting the correct `EXTERNAL-IP` listed for your service).
 You should see the page of the `echo-server` application.
 
-![Trying out the new Kubernetes cluster with the echo-server application](assets/echo_server_app.png)
+![Trying out the new Kubernetes cluster with the echo-server application](assets/echo_server_app_light.png#only-light)
+![Trying out the new Kubernetes cluster with the echo-server application](assets/echo_server_app_dark.png#only-dark)
 
 ## Rotating kubeconfig
 
@@ -169,39 +174,47 @@ Locate the shoot cluster you are interested in.
 Click on its row to bring all relevant details into view, and go to the *KubeConfig* tab.
 Click the red button labeled *Rotate CA Bundle*.
 
-![Click the red button labeled "Rotate CA Bundle"](assets/kubeconfig_cert_rotate_01.png)
+![Click the red button labeled "Rotate CA Bundle"](assets/kubeconfig_cert_rotate_01_light.png#only-light)
+![Click the red button labeled "Rotate CA Bundle"](assets/kubeconfig_cert_rotate_01_dark.png#only-dark)
 
 A new window pops up, informing you in detail about the 3-step process that is about to take place.
 Please notice that it may take up to twenty minutes to complete.
 When ready, click the red *Start CA rotation* button.
 
-![Detailed information regarding the whole CA bundle rotation process](assets/kubeconfig_cert_rotate_02.png)
+![Detailed information regarding the whole CA bundle rotation process](assets/kubeconfig_cert_rotate_02_light.png#only-light)
+![Detailed information regarding the whole CA bundle rotation process](assets/kubeconfig_cert_rotate_02_dark.png#only-dark)
 
 During the first step, a new CA bundle is generated.
 This may take up to ten minutes to complete.
 During that time, the existing kubeconfig file still works.
 
-![Generating a new CA bundle](assets/kubeconfig_cert_rotate_03.png)
+![Generating a new CA bundle](assets/kubeconfig_cert_rotate_03_light.png#only-light)
+![Generating a new CA bundle](assets/kubeconfig_cert_rotate_03_dark.png#only-dark)
 
 When the new CA bundle is ready, you remove the existing one by clicking the red *Remove old CA bundle* button.
 As soon as you click it, the existing kubeconfig stops working.
 
-![Removing the old CA bundle](assets/kubeconfig_cert_rotate_04.png)
+![Removing the old CA bundle](assets/kubeconfig_cert_rotate_04_light.png#only-light)
+![Removing the old CA bundle](assets/kubeconfig_cert_rotate_04_dark.png#only-dark)
 
 The old CA bundle removal process may take up to ten minutes.
 Notice the gray animated icon, indicating the process is ongoing.
 
-![Old CA bundle removal in progress](assets/kubeconfig_cert_rotate_05.png)
+![Old CA bundle removal in progress](assets/kubeconfig_cert_rotate_05_light.png#only-light)
+![Old CA bundle removal in progress](assets/kubeconfig_cert_rotate_05_dark.png#only-dark)
 
 It is now time to create a new certificate-based kubeconfig, which will be based on the new CA bundle.
 This time, click the *Back* button, or the CA bundle creation process will start over.
 
-![Time to create a fresh certificate-based kubeconfig file](assets/kubeconfig_cert_rotate_06.png)
+![Time to create a fresh certificate-based kubeconfig file](assets/kubeconfig_cert_rotate_06_light.png#only-light)
+![Time to create a fresh certificate-based kubeconfig file](assets/kubeconfig_cert_rotate_06_dark.png#only-dark)
 
 Choose a duration for the new kubeconfig, then click the green *Generate config* button.
 
-![Set duration for the new kubeconfig and generate it](assets/kubeconfig_cert_rotate_07.png)
+![Set duration for the new kubeconfig and generate it](assets/kubeconfig_cert_rotate_07_light.png#only-light)
+![Set duration for the new kubeconfig and generate it](assets/kubeconfig_cert_rotate_07_dark.png#only-dark)
 
 To get your new certificate-based kubeconfig file, click the blue *Download KubeConfig* button.
 
-![Download fresh certificate-based kubeconfig](assets/kubeconfig_cert_rotate_08.png)
+![Download fresh certificate-based kubeconfig](assets/kubeconfig_cert_rotate_08_light.png#only-light)
+![Download fresh certificate-based kubeconfig](assets/kubeconfig_cert_rotate_08_dark.png#only-dark)
