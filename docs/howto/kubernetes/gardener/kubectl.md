@@ -121,10 +121,11 @@ kubectl get nodes
 Assuming you used the default options when creating the cluster, you should now see the three {{k8s_management_service}} worker nodes that are initially available:
 
 ```console
-NAME                                            STATUS   ROLES    AGE   VERSION
-shoot--pqrxyz--ismaning-1bc4ef-z1-798d7-2hndf   Ready    worker   11m   v1.33.7
-shoot--pqrxyz--ismaning-1bc4ef-z1-798d7-5mj77   Ready    worker   11m   v1.33.7
-shoot--pqrxyz--ismaning-1bc4ef-z1-798d7-kthv6   Ready    worker   11m   v1.33.7
+$ kubectl get nodes
+NAME                                            STATUS   ROLES    AGE     VERSION
+shoot--pqrxyz--ismaning-nuehdj-z1-96978-6fthj   Ready    worker   3d12h   v1.34.7
+shoot--pqrxyz--ismaning-nuehdj-z1-96978-j9hk6   Ready    worker   3d12h   v1.34.7
+shoot--pqrxyz--ismaning-nuehdj-z1-96978-n4nz9   Ready    worker   3d12h   v1.34.7
 ```
 
 > Please note that in contrast to other Kubernetes platforms, where the output of `kubectl get nodes` includes control plane *and* worker nodes, in a {{k8s_management_service}} cluster the same command *only* lists the worker nodes.
@@ -151,9 +152,9 @@ After a couple of minutes or so, you should get the load balancer service *with*
 
 ```console
 $ kubectl get services
-NAME          TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
-echo-server   LoadBalancer   100.64.59.27   198.51.100.42 80:31511/TCP   26s
-kubernetes    ClusterIP      100.64.0.1     <none>        443/TCP        49m
+NAME          TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)        AGE
+echo-server   LoadBalancer   100.65.68.44   198.51.100.42    80:32005/TCP   3d11h
+kubernetes    ClusterIP      100.64.0.1     <none>           443/TCP        3d12h
 ```
 
 Open a browser and navigate to `http://198.51.100.42` (substituting the correct `EXTERNAL-IP` listed for your service).
