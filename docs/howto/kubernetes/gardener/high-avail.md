@@ -19,7 +19,7 @@ Then, in the central pane of the {{gui}}, you see all of your {{k8s_management_s
 ![Get the list of all available {{k8s_management_service}} clusters](assets/shoot-enable-ha-01_light.png#only-light)
 ![Get the list of all available {{k8s_management_service}} clusters](assets/shoot-enable-ha-01_dark.png#only-dark)
 
-Locate the cluster you are interested in, and click the orange :material-dots-horizontal-circle: icon on the right of the corresponding row.
+Locate the cluster you are interested in, and click the :material-dots-horizontal-circle: icon on the right of the corresponding row.
 From the drop-down menu that appears, select _Modify Cluster_.
 
 ![Select the option for modifying a cluster](assets/shoot-enable-ha-02_light.png#only-light)
@@ -39,7 +39,7 @@ Once you take it, there is no way to disable HA at a later time.
 ![Select HA for the control plane](assets/shoot-enable-ha-04_light.png#only-light)
 ![Select HA for the control plane](assets/shoot-enable-ha-04_dark.png#only-dark)
 
-If you are sure you want to enable HA, scroll down a bit until you see the green _Update_ button and click on it.
+If you are sure you want to enable HA, scroll down a bit until you see the _Update_ button and click on it.
 
 ![Activate HA for the control plane](assets/shoot-enable-ha-05_light.png#only-light)
 ![Activate HA for the control plane](assets/shoot-enable-ha-05_dark.png#only-dark)
@@ -73,7 +73,7 @@ A vertical pane named _Modify Worker Group_ slides over from the right.
 
 Modify the _Autoscaler&nbsp;Min_ and _Autoscaler&nbsp;Max_ parameters.
 You may, for instance, set _Autoscaler&nbsp;Min_ to 5 and _Autoscaler&nbsp;Max_ to 7.
-When you are ready to apply the changes, click the green _Update_ button.
+When you are ready to apply the changes, click the _Update_ button.
 
 ![Modify autoscaling parameters](assets/shoot-enable-ha-10_light.png#only-light)
 ![Modify autoscaling parameters](assets/shoot-enable-ha-10_dark.png#only-dark)
