@@ -16,7 +16,6 @@ In the left-hand vertical pane of the {{gui}}, select Containers → [{{k8s_mana
 In the central pane are your {{k8s_management_service}} clusters, each on its row.
 
 If a Kubernetes upgrade is available for a shoot cluster, you will notice a :fontawesome-solid-circle-arrow-up: icon on the right of the current Kubernetes version.
-In our example, the current Kubernetes version is 1.32.11.
 Additionally, if there is a new machine image for the cluster nodes, you will also notice a :fontawesome-solid-circle-arrow-up: icon on the right of the number of Worker Groups.
 In our example, the cluster has 1 Worker Group.
 
