@@ -6,7 +6,8 @@ description: How to enable HA for the control plane or Worker Groups of a Garden
 When you [create a new {{k8s_management_service}} cluster](create-shoot-cluster.md), you have the option to enable high availability (HA) features for its control plane.
 In case you have an existing {{k8s_management_service}} cluster with a non-HA control plane, you may at any time enable the HA features for that control plane.
 
-> Keep in mind that once you enable HA for the control plane of a {{k8s_management_service}} cluster, you cannot disable it for that particular cluster.
+!!! warning "HA for control plane cannot be disabled"
+    Keep in mind that once you enable HA for the control plane of a {{k8s_management_service}} cluster, you cannot disable it for that particular cluster.
 
 Additionally, you may add HA characteristics to one or more Worker Groups of an existing cluster.
 

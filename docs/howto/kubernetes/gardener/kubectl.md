@@ -128,7 +128,8 @@ shoot--pqrxyz--ismaning-nuehdj-z1-96978-j9hk6   Ready    worker   3d12h   v1.34.
 shoot--pqrxyz--ismaning-nuehdj-z1-96978-n4nz9   Ready    worker   3d12h   v1.34.7
 ```
 
-> Please note that in contrast to other Kubernetes platforms, where the output of `kubectl get nodes` includes control plane *and* worker nodes, in a {{k8s_management_service}} cluster the same command *only* lists the worker nodes.
+??? note "Output differences compared to other Kubernetes platforms"
+    In contrast to other Kubernetes platforms, where the output of `kubectl get nodes` includes control plane *and* worker nodes, in a {{k8s_management_service}} cluster the same command *only* lists the worker nodes.
 
 ## Deploying an application
 
