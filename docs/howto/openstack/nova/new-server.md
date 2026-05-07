@@ -88,7 +88,7 @@ On the other hand, if you prefer to work with the OpenStack CLI, please do not f
 
     Note that, depending on the chosen flavor, the estimated monthly cost of the server changes.
     (While a server is shut off, you are still getting charged for it, but less so.)
-    At any time, this estimated cost is displayed in the green rectangular area at the top.
+    At any time, this estimated cost is displayed in the rectangular area at the top.
 
     Something else that affects the cost is the size of the root device.
     Take a look at the _Volume_ parameter below, and notice the default (in [gibibytes](https://en.wikipedia.org/wiki/Gigabyte#Base_2_(binary))).
@@ -115,7 +115,7 @@ On the other hand, if you prefer to work with the OpenStack CLI, please do not f
     By doing so, you will not be able to manually delete snapshots before the retention period is over.
     Also, you will not be able to delete the server volume until all immutable snapshots are deleted.
 
-    Please be aware that enabling the recovery service increases the server's monthly estimated cost (again, it is displayed in the green rectangular area at the top).
+    Please be aware that enabling the recovery service increases the server's monthly estimated cost (again, it is displayed in the rectangular area at the top).
 
     ![Recovery service option](assets/new-server/shot-08_light.png#only-light)
     ![Recovery service option](assets/new-server/shot-08_dark.png#only-dark)
@@ -149,7 +149,7 @@ On the other hand, if you prefer to work with the OpenStack CLI, please do not f
     For more on what this is and why you might want to select the _Use&nbsp;configuration&nbsp;drive_ method, please read our guide on [launching a server with a configuration drive](config-drive.md).
 
     It is now time to create your {{brand}} server.
-    Click the green _Create_ button, and the new server will be readily available in a few seconds.
+    Click the _Create_ button, and the new server will be readily available in a few seconds.
 
     ![Initiate server creation process](assets/new-server/shot-13_light.png#only-light)
     ![Initiate server creation process](assets/new-server/shot-13_dark.png#only-dark)
@@ -337,7 +337,7 @@ On the other hand, if you prefer to work with the OpenStack CLI, please do not f
 === "{{gui}}"
     While viewing information regarding your server, you may get its IPv6 or public IPv4 address (e.g., from the _Addresses_ tab), and connect to it remotely via SSH.
     Alternatively, you may launch a web console and log in.
-    Click the orange :material-dots-horizontal-circle: icon on the right of the server row, and from the pop-up menu that appears, select _Remote Console_.
+    Click the :material-dots-horizontal-circle: icon on the right of the server row, and from the pop-up menu that appears, select _Remote Console_.
 
     ![Launch remote console](assets/new-server/shot-15_light.png#only-light)
     ![Launch remote console](assets/new-server/shot-15_dark.png#only-dark)
