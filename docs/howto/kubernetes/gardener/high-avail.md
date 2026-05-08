@@ -96,22 +96,26 @@ Click once more on the _Worker Groups_ tab to see all available groups.
 In the example below, there is only one Worker Group that resides in the AZ named `az1`.
 To create a new Worker Group, click on the green _Create a Worker Group_ button.
 
-![{{k8s_management_service}} cluster with one Worker Group](assets/shoot-enable-ha-12.png)
+![{{k8s_management_service}} cluster with one Worker Group](assets/shoot-enable-ha-12_light.png#only-light)
+![{{k8s_management_service}} cluster with one Worker Group](assets/shoot-enable-ha-12_dark.png#only-dark)
 
 A vertical pane named _Create Worker Group_ slides over from the right.
 There, you see the parameters of a new group.
 Before you create it, click on the drop-down menu for _Availability Zones_, and indicate an AZ for the new group.
 Make sure you pick one which is **different** from the AZ where the first Worker Group resides.
 
-![Selecting an Availability Zone for a new Worker Group](assets/shoot-enable-ha-13.png)
+![selecting an availability zone for a new worker group](assets/shoot-enable-ha-13_light.png#only-light)
+![selecting an availability zone for a new worker group](assets/shoot-enable-ha-13_dark.png#only-dark)
 
 Optionally, you can have the new Worker Group reside **only** in the new AZ you just selected:
 for that, click the old AZ label to remove it.
 Finally, click on the green _Create_ button to instantiate the new WG.
 
-![Removing the label of the default Availability Zone and create the new Worker Group](assets/shoot-enable-ha-14.png)
+![Removing the label of the default Availability Zone and create the new Worker Group](assets/shoot-enable-ha-14_light.png#only-light)
+![Removing the label of the default Availability Zone and create the new Worker Group](assets/shoot-enable-ha-14_dark.png#only-dark)
 
 When the new Worker Group is ready, you can see all groups in the _Worker Groups_ tab, each in its own AZ.
 
-![Two Worker Groups, each in its own Availability Zone](assets/shoot-enable-ha-15.png)
+![Two Worker Groups, each in its own Availability Zone](assets/shoot-enable-ha-15_light.png#only-light)
+![Two Worker Groups, each in its own Availability Zone](assets/shoot-enable-ha-15_dark.png#only-dark)
 
