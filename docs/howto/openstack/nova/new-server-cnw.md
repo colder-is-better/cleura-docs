@@ -99,4 +99,4 @@ The firewall has two network interfaces: `if1` is the external interface, and `i
 ![View Clavister NetWall neighbor devices](assets/new-server-cnw/new-server-cnw-04.png)
 
 You will notice the IP address of the new server you just spun up and its network adapter MAC address.
-Finally, in the *Status* column, there is a green box labeled *ACTIVE*, indicating that the server is accessible to the firewall.
+Finally, in the *Status* column, there is a box labeled *ACTIVE*, indicating that the server is accessible to the firewall.
