@@ -40,7 +40,7 @@ Follow our [How-To guide](new-server.md) to create your new cloud server using e
     ![Select the configuration drive method](assets/config-drive/shot-02_light.png#only-light)
     ![Select the configuration drive method](assets/config-drive/shot-02_dark.png#only-dark)
 
-    Then, instantiate the server by clicking the green _Create_ button.
+    Then, instantiate the server by clicking the _Create_ button.
 
     Once the server is ready, you may see what happened during configuration by examining the console log.
     In the {{gui}}, click on the server line to get an extended view of its characteristics, and then click once more on the _Console Output_ tab.
