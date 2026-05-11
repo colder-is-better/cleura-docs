@@ -30,7 +30,7 @@ Select the _Recovery&nbsp;Service_ tab.
 
 You now see all available volume snapshots.
 You may restore the server to any of those.
-Go ahead and click on the _Restore_ option of the latest snapshot.
+Go ahead and click on the _Restore_ option of a snapshot.
 
 ![Backing volume snapshot list](assets/rest-srv-to-snap/backing-volume-recovery-service_light.png#only-light)
 ![Backing volume snapshot list](assets/rest-srv-to-snap/backing-volume-recovery-service_dark.png#only-dark)
@@ -39,9 +39,7 @@ A new window named _Restore Snapshot_ appears.
 
 If the snapshot you are about to restore comes from a boot volume, like in the example here, then you can only restore the snapshot to a **new** volume.
 
-Had you chosen to restore an **older** snapshot, then you could also restore it to a **new** volume.
-
-The only time you can restore a snapshot to an existing volume is when the snapshot comes from a non-boot volume and is the newest.
+The only time you can restore a snapshot to an existing volume is when the snapshot comes from a non-boot volume **and** is the newest.
 
 To restore the selected snapshot, click the green _Restore_ button.
 
