@@ -41,7 +41,7 @@ If the snapshot you are about to restore comes from a boot volume, like in the e
 
 The only time you can restore a snapshot to an existing volume is when the snapshot comes from a non-boot volume **and** is the newest.
 
-To restore the selected snapshot, click the green _Restore_ button.
+To restore the selected snapshot, click the _Restore_ button.
 
 ![About to restore the selected snapshot](assets/rest-srv-to-snap/restore-selected-snapshot_light.png#only-light)
 ![About to restore the selected snapshot](assets/rest-srv-to-snap/restore-selected-snapshot_dark.png#only-dark)
@@ -61,7 +61,7 @@ its name is prefixed by "Restored" and immediately followed by the ID of the ori
 ![All volumes, including one created from a snapshot](assets/rest-srv-to-snap/all-volumes_dark.png#only-dark)
 
 You can now create a server from the new volume.
-Click the orange :material-dots-horizontal-circle: icon at the left of the volume row, select _Create Server_, and work as you usually would while [creating a new server](new-server.md).
+Click the :material-dots-horizontal-circle: icon at the left of the volume row, select _Create Server_, and work as you usually would while [creating a new server](new-server.md).
 
 ![Creating a server from the new volume](assets/rest-srv-to-snap/volume-restored-create-server_light.png#only-light)
 ![Creating a server from the new volume](assets/rest-srv-to-snap/volume-restored-create-server_dark.png#only-dark)
