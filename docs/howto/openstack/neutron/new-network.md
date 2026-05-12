@@ -106,7 +106,7 @@ Unless you work from the {{gui}}, where almost every component is activated for 
     Alongside your IPv4-based subnet, you may also have an IPv6-based subnet;
     both subnets will be members of the network you are now creating.
 
-    To create a second, IPv6-based subnet, click the orange :fontawesome-solid-circle-plus: icon at the top of the _Subnet Name (#1)_ section.
+    To create a second, IPv6-based subnet, click the :fontawesome-solid-circle-plus: icon at the top of the _Subnet Name (#1)_ section.
     In the new _Subnet Name (#2)_ section that appears, be sure to set _IP Version_ to _IPv6_ abd you will get the following:
 
     - One 64bit-prefixed subnet with
@@ -118,7 +118,7 @@ Unless you work from the {{gui}}, where almost every component is activated for 
 
     Scroll down a bit if you have to.
     Assuming you want your cloud servers to reach hosts on the Internet, for the _External network_ parameter make sure you select _ext-net_.
-    Then, click the green _Create_ button.
+    Then, click the _Create_ button.
     In a few seconds, the new network will be readily available.
 
     ![Finish creating network](assets/new-net-panel/shot-05_light.png#only-light)
