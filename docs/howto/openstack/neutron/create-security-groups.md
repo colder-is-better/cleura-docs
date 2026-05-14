@@ -12,7 +12,8 @@ On the other hand, if you prefer to work with the OpenStack CLI, please do not f
     To create a security group, first make sure the left-hand side vertical pane is fully visible.
     Click on _Security&nbsp;Groups_, and then on the top-right corner of the central pane, click on _Create new Security Group_.
 
-    ![Initiating the creation of a new security group](assets/create-security-groups/create-secgroup-01.png)
+    ![Initiating the creation of a new security group](assets/create-security-groups/create-secgroup-01_light.png#only-light)
+    ![Initiating the creation of a new security group](assets/create-security-groups/create-secgroup-01_dark.png#only-dark)
 
     > An alternative way to create a Security&nbsp;Group is by clicking on the round-cornered _Create_ button, in the top bar.
 
@@ -20,7 +21,8 @@ On the other hand, if you prefer to work with the OpenStack CLI, please do not f
     You may optionally type in a _Description_ for the security group.
     Click on the green _Create_ button when you are ready.
 
-    ![Setting parameters for the new security group](assets/create-security-groups/create-secgroup-02.png)
+    ![Setting parameters for the new security group](assets/create-security-groups/create-secgroup-02_light.png#only-light)
+    ![Setting parameters for the new security group](assets/create-security-groups/create-secgroup-02_dark.png#only-dark)
 === "OpenStack CLI"
     To create a security group, use the following command:
 
@@ -65,7 +67,8 @@ All traffic to any destination (egress) is allowed by default.
     Navigate to the _Security&nbsp;Groups_ page.
     Click on the `default` security group and select the _Rules_ tab to view its rules.
 
-    ![List of rules in the default security group](assets/create-security-groups/default-rules.png)
+    ![List of rules in the default security group](assets/create-security-groups/default-rules_light.png#only-light)
+    ![List of rules in the default security group](assets/create-security-groups/default-rules_dark.png#only-dark)
 
 === "OpenStack CLI"
     View the details of the `default` security group using the following command:
@@ -113,7 +116,8 @@ If you want to restrict the ingress rules to disallow access from other servers 
 
     Your `default` or newly created security group rules will now look like the following example.
 
-    ![List of default ingress rules](assets/create-security-groups/default-rules-egress.png)
+    ![List of default ingress rules](assets/create-security-groups/default-rules-egress_light.png#only-light)
+    ![List of default ingress rules](assets/create-security-groups/default-rules-egress_dark.png#only-dark)
 
 === "OpenStack CLI"
     To view the rules, use the following command:
@@ -205,16 +209,19 @@ The next thing to do is allow SSH access on **port 22** for IPv4 and IPv6 client
 
     To create the new rule, click the green _Create_ button.
 
-    ![Create ingress rule for IPv4 SSH connections](assets/create-security-groups/default-rules-ingress-ssh-ipv4.png)
+    ![Create ingress rule for IPv4 SSH connections](assets/create-security-groups/default-rules-ingress-ssh-ipv4_light.png#only-light)
+    ![Create ingress rule for IPv4 SSH connections](assets/create-security-groups/default-rules-ingress-ssh-ipv4_dark.png#only-dark)
 
     You may work similarly for the IPv6 ingress SSH rule;
     just be sure to set _Ether&nbsp;Type_ to _IPv6_.
 
-    ![Create ingress rule for IPv6 SSH connections](assets/create-security-groups/default-rules-ingress-ssh-ipv6.png)
+    ![Create ingress rule for IPv6 SSH connections](assets/create-security-groups/default-rules-ingress-ssh-ipv6_light.png#only-light)
+    ![Create ingress rule for IPv6 SSH connections](assets/create-security-groups/default-rules-ingress-ssh-ipv6_dark.png#only-dark)
 
     When you are done creating the two ingress rules for SSH, you see them listed in the _Rules_ tab of the security group.
 
-    ![New ingress rules for SSH connections](assets/create-security-groups/default-rules-ingress-ssh.png)
+    ![New ingress rules for SSH connections](assets/create-security-groups/default-rules-ingress-ssh_light.png#only-light)
+    ![New ingress rules for SSH connections](assets/create-security-groups/default-rules-ingress-ssh_dark.png#only-dark)
 === "OpenStack CLI"
     To create this rule for IPv4 client connections, use the following command:
 
@@ -252,25 +259,30 @@ Next, create the rules that allow anyone to access a server on **port 80** and *
     This time, leave _CIDR_ empty, essentially allowing incoming traffic from any IPv4 client.
     Click the green _Create_ button to instantiate the new rule.
 
-    ![Create new ingress rule for IPv4 connections to 80/TCP](assets/create-security-groups/default-rules-ingress-http-ipv4.png)
+    ![Create new ingress rule for IPv4 connections to 80/TCP](assets/create-security-groups/default-rules-ingress-http-ipv4_light.png#only-light)
+    ![Create new ingress rule for IPv4 connections to 80/TCP](assets/create-security-groups/default-rules-ingress-http-ipv4_dark.png#only-dark)
 
     The same for the ingress rule for IPv4 connections to 443/TCP.
     The only difference is in the _Port range_ text boxes;
     in each of the two, you should now type `443`.
 
-    ![Create new ingress rule for IPv4 connections to 443/TCP](assets/create-security-groups/default-rules-ingress-https-ipv4.png)
+    ![Create new ingress rule for IPv4 connections to 443/TCP](assets/create-security-groups/default-rules-ingress-https-ipv4_light.png#only-light)
+    ![Create new ingress rule for IPv4 connections to 443/TCP](assets/create-security-groups/default-rules-ingress-https-ipv4_dark.png#only-dark)
 
     Just like you did for incoming IPv4 connections, create a new ingress rule for IPv6 clients connecting to 80/TCP...
     
-    ![Create new ingress rule for IPv6 connections to 80/TCP](assets/create-security-groups/default-rules-ingress-http-ipv6.png)
+    ![Create new ingress rule for IPv6 connections to 80/TCP](assets/create-security-groups/default-rules-ingress-http-ipv6_light.png#only-light)
+    ![Create new ingress rule for IPv6 connections to 80/TCP](assets/create-security-groups/default-rules-ingress-http-ipv6_dark.png#only-dark)
 
     ...and a new ingress rule for IPv6 clients connecting to 443/TCP.
     
-    ![Create new ingress rule for IPv6 connections to 443/TCP](assets/create-security-groups/default-rules-ingress-https-ipv6.png)
+    ![Create new ingress rule for IPv6 connections to 443/TCP](assets/create-security-groups/default-rules-ingress-https-ipv6_light.png#only-light)
+    ![Create new ingress rule for IPv6 connections to 443/TCP](assets/create-security-groups/default-rules-ingress-https-ipv6_dark.png#only-dark)
 
     When you are done creating the new ingress rules, you will see them all listed in the _Rules_ tab of the `default` security group.
     
-    ![All new rules regarding incoming connections to 80/TCP and 443/TCP](assets/create-security-groups/default-rules-ingress-new.png)
+    ![All new rules regarding incoming connections to 80/TCP and 443/TCP](assets/create-security-groups/default-rules-ingress-new_light.png#only-light)
+    ![All new rules regarding incoming connections to 80/TCP and 443/TCP](assets/create-security-groups/default-rules-ingress-new_dark.png#only-dark)
 
 === "OpenStack CLI"
     This time don't specify `--remote-ip`, to allow traffic from _all_ IPv4 and IPv6 sources:
@@ -361,7 +373,8 @@ We recommend either creating and using a new security group, other than the `def
     To check how your `default` security group is configured, click on it and select the _Rules_ tab to view its rules.
     If you have an old, permissive `default` group, the rules should look like this:
 
-    ![Rules of an old permissive security group](assets/create-security-groups/ruleset-ingress-permissive.png)
+    ![Rules of an old permissive security group](assets/create-security-groups/ruleset-ingress-permissive_light.png#only-light)
+    ![Rules of an old permissive security group](assets/create-security-groups/ruleset-ingress-permissive_dark.png#only-dark)
 
     The ingress rules with the remote access filters of `::/0` and `0.0.0.0/0`, mean that incoming traffic from _all_ sources is allowed.
     
@@ -370,7 +383,8 @@ We recommend either creating and using a new security group, other than the `def
 
     Your `default` or newly created security group rules will now look like the following.
 
-    ![Rules of a permissive security group gone forbidding](assets/create-security-groups/ruleset-ingress-forbidding.png)
+    ![Rules of a permissive security group gone forbidding](assets/create-security-groups/ruleset-ingress-forbidding_light.png#only-light)
+    ![Rules of a permissive security group gone forbidding](assets/create-security-groups/ruleset-ingress-forbidding_dark.png#only-dark)
 
 === "OpenStack CLI"
     To view the rules, use the following command:
