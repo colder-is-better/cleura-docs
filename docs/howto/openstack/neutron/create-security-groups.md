@@ -19,7 +19,7 @@ On the other hand, if you prefer to work with the OpenStack CLI, please do not f
 
     Type in a _Name_ for the new security group, and choose a _Region_ to create it in.
     You may optionally type in a _Description_ for the security group.
-    Click on the green _Create_ button when you are ready.
+    Click on the _Create_ button when you are ready.
 
     ![Setting parameters for the new security group](assets/create-security-groups/create-secgroup-02_light.png#only-light)
     ![Setting parameters for the new security group](assets/create-security-groups/create-secgroup-02_dark.png#only-dark)
@@ -112,7 +112,7 @@ All traffic to any destination (egress) is allowed by default.
 If you want to restrict the ingress rules to disallow access from other servers and ports in the group, you need to **remove the default two ingress rules.**
 
 === "{{gui}}"
-    Click each of the red :material-delete-circle: buttons on the right-hand side of the **IPv4 ingress** and also of the **IPv6 ingress** rows.
+    Click each of the:material-delete-circle: buttons on the right-hand side of the **IPv4 ingress** and also of the **IPv6 ingress** rows.
 
     Your `default` or newly created security group rules will now look like the following example.
 
@@ -201,13 +201,13 @@ If you want to restrict the ingress rules to disallow access from other servers 
 The next thing to do is allow SSH access on **port 22** for IPv4 and IPv6 client connections -- but _only_ from specific addresses or subnets.
 
 === "{{gui}}"
-    To do this, while on the _Rules_ tab, click on the green _Create new rule_ button.
+    To do this, while on the _Rules_ tab, click on the _Create new rule_ button.
     A pane named _Create a Security Group Rule_ will slide over from the right-hand side of the browser window.
 
     For the IPv4 ingress SSH rule, make sure you set _Protocol_ to _TCP_, _Direction_ to _Ingress_, and _Ether&nbsp;Type_ to _IPv4_.
     Then, set _From_ to _Network/IP_ and, in the _Custom&nbsp;CIDR_ text box below, type in either the IPv4 address of your client host or the CIDR of your client subnet.
 
-    To create the new rule, click the green _Create_ button.
+    To create the new rule, click the _Create_ button.
 
     ![Create ingress rule for IPv4 SSH connections](assets/create-security-groups/default-rules-ingress-ssh-ipv4_light.png#only-light)
     ![Create ingress rule for IPv4 SSH connections](assets/create-security-groups/default-rules-ingress-ssh-ipv4_dark.png#only-dark)
@@ -253,11 +253,11 @@ Alternatively, you may use a single IPv6 address, like `2001:db8:ffff:ffff:ffff:
 Next, create the rules that allow anyone to access a server on **port 80** and **port 443**.
 
 === "{{gui}}"
-    Following a similar routine as before, begin by clicking on the green _Create new rule_ button.
+    Following a similar routine as before, begin by clicking on the _Create new rule_ button.
     To create an ingress rule for IPv4 connections to 80/TCP, set _Protocol_, _Direction_, and _Ether&nbsp;Type_ accordingly.
     Then, in each of the two _Port range_ text boxes, type in `80`.
     This time, leave _CIDR_ empty, essentially allowing incoming traffic from any IPv4 client.
-    Click the green _Create_ button to instantiate the new rule.
+    Click the _Create_ button to instantiate the new rule.
 
     ![Create new ingress rule for IPv4 connections to 80/TCP](assets/create-security-groups/default-rules-ingress-http-ipv4_light.png#only-light)
     ![Create new ingress rule for IPv4 connections to 80/TCP](assets/create-security-groups/default-rules-ingress-http-ipv4_dark.png#only-dark)
