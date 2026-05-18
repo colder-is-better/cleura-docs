@@ -43,7 +43,7 @@ Let us assume you wish to delete the network named `carmacks`.
 ## Determining component dependencies
 
 If the network to be deleted has a subnet component --- and most likely it will have ---, you will first have to delete the subnet before deleting the network.
-If, in addition, the network is behind a router (figurately speaking), then before deleting the subnet, you will have to disconnect it from the router.
+If, in addition, the subnet is behind a router (figurately speaking), then before deleting the subnet, you will have to disconnect it from the router.
 Finally, you will have the option to delete the router also.
 Let us see what the situation is with network `carmacks`.
 
@@ -55,6 +55,19 @@ Let us see what the situation is with network `carmacks`.
 
     ![Network details](assets/del-net/shot-02_light.png#only-light)
     ![Network details](assets/del-net/shot-02_dark.png#only-dark)
+
+    ??? "Automatically deleting networks with all their dependencies"
+        There are cases where you know exactly all subnets in a network beforehand, and also any router in front of the network's subnets.
+        If, in addition, you know no other resources are depending on the network, its subnets, and any subnet router, you may try automatically deleting the network and all related components in one go.
+
+        Select the network to delete, and in the pop-up window that appears, before clicking the _Yes, Delete_ button, make sure you activate the _Use cascade delete_ option.
+
+        ![Use cascade delete to automatically delete a network and all related components](assets/del-net/smart-delete_light.png#only-light)
+        ![Use cascade delete to automatically delete a network and all related components](assets/del-net/smart-delete_dark.png#only-dark)
+
+        The network and its subnets, including any subnet routers, will be deleted.
+        But if there is any resource still using the network, any of its subnets, or any subnet router, the cascading delete will fail.
+        In that case, you will have to do some manual work, like in the examples we provide here.
 === "OpenStack CLI"
     To quickly check whether network `carmacks` has a subnet or not, type:
 
