@@ -48,7 +48,7 @@ Finally, you will have the option to delete the router also.
 Let us see what the situation is with network `carmacks`.
 
 === "{{gui}}"
-    For more information on `carmacks`, click the three-dot icon (right-hand side of the network row) and select _View details_.
+    For more information on `carmacks`, click the :material-dots-horizontal-circle: icon (right-hand side of the network row) and select _View details_.
     Four tabs immediately appear below; _Details_, _Ports_, _Subnets_, and _Routers_.
     Looking at the _Details_ tab, it is clear that network `carmacks` has a subnet and is behind a router.
     You may click on tabs _Subnets_ and _Routers_, to see more information regarding the network subnet and the router in front of the network.
@@ -180,27 +180,27 @@ Now that you know you're dealing with a full-blown network and a router, you sta
 Then, you will move on to deleting the subnet and the network, and after that, you can finish up with deleting the router.
 
 === "{{gui}}"
-    Go to the _Subnets_ tab of the `carmacks` network, and click the gray notepad-and-pen icon (at the left of the red circle-with-trashcan icon).
+    Go to the _Subnets_ tab of the `carmacks` network, and click the :material-note-edit-outline: icon (at the left of the :material-delete-circle-outline: icon).
 
     ![Network subnets](assets/del-net/shot-03_light.png#only-light)
     ![Network subnets](assets/del-net/shot-03_dark.png#only-dark)
 
     A vertical pane titled _Modify Subnet_ will slide over from the right-hand side of the page. Pay attention to the _Router Connections_ section.
     You will notice an active connection to the router.
-    Click the red circle-with-line-over-chainlink icon to deactivate the connection, effectively disconnecting the subnet from the router.
+    Click the :material-link-off: icon to deactivate the connection, effectively disconnecting the subnet from the router.
 
     ![Disconnect subnet](assets/del-net/shot-04_light.png#only-light)
     ![Disconnect subnet](assets/del-net/shot-04_dark.png#only-dark)
 
     A pop-up window will appear, asking if you really want to go ahead with the disconnection.
-    Just click the red _Yes, Remove interface_ button.
+    Just click the _Yes, Remove interface_ button.
 
     ![Remove interface](assets/del-net/shot-05_light.png#only-light)
     ![Remove interface](assets/del-net/shot-05_dark.png#only-dark)
 
-    After disconnecting the subnet, click the red circle-and-trashcan icon to delete it.
+    After disconnecting the subnet, click the :material-delete-circle-outline: icon to delete it.
     Once more, a pop-up will appear asking for confirmation.
-    Click the red _Yes, Delete_ button.
+    Click the _Yes, Delete_ button.
 
     ![Delete subnet](assets/del-net/shot-06_light.png#only-light)
     ![Delete subnet](assets/del-net/shot-06_dark.png#only-dark)
@@ -211,13 +211,13 @@ Then, you will move on to deleting the subnet and the network, and after that, y
     ![No subnets](assets/del-net/shot-07_dark.png#only-dark)
 
     You can now delete the network.
-    Click the three-dot icon (right-hand side of the network row) and select _Delete Network_.
+    Click the :material-dots-horizontal-circle: icon (right-hand side of the network row) and select _Delete Network_.
 
     ![Delete Carmacks](assets/del-net/shot-08_light.png#only-light)
     ![Delete Carmacks](assets/del-net/shot-08_dark.png#only-dark)
 
     Of course, you will have to confirm this action.
-    Clicking the red _Yes, Delete_ button is enough.
+    Clicking the _Yes, Delete_ button is enough.
 
     ![Confirm network delete](assets/del-net/shot-09_light.png#only-light)
     ![Confirm network delete](assets/del-net/shot-09_dark.png#only-dark)
@@ -234,8 +234,8 @@ Then, you will move on to deleting the subnet and the network, and after that, y
     ![All routers](assets/del-net/shot-11_light.png#only-light)
     ![All routers](assets/del-net/shot-11_dark.png#only-dark)
 
-    Click the red three-dot icon of the router you wish to delete and select _Delete Router_.
-    A pop-up will appear asking for confirmation, so click the red _Yes, Delete_ button.
+    Click the :material-dots-horizontal-circle: icon of the router you wish to delete and select _Delete Router_.
+    A pop-up will appear asking for confirmation, so click the _Yes, Delete_ button.
 
     ![Confirm router delete](assets/del-net/shot-12_light.png#only-light)
     ![Confirm router delete](assets/del-net/shot-12_dark.png#only-dark)
@@ -376,12 +376,12 @@ For our demonstration, we created network `teslin`, with subnet `teslin-subnet` 
     ![No router in sight](assets/del-net/shot-14_light.png#only-light)
     ![No router in sight](assets/del-net/shot-14_dark.png#only-dark)
 
-    Go to the _Subnets_ tab, and click the red circle-with-trashcan icon to delete the subnet.
+    Go to the _Subnets_ tab, and click the :material-delete-circle-outline: icon to delete the subnet.
 
     ![Delete subnet](assets/del-net/shot-15_light.png#only-light)
     ![Delete subnet](assets/del-net/shot-15_dark.png#only-dark)
 
-    Then, click the red three-dot icon at the right-hand side of the `teslin` row, and select _Delete Network_.
+    Then, click the :material-dots-horizontal-circle: icon at the right-hand side of the `teslin` row, and select _Delete Network_.
 
     ![Delete Teslin](assets/del-net/shot-16_light.png#only-light)
     ![Delete Teslin](assets/del-net/shot-16_dark.png#only-dark)
@@ -461,7 +461,7 @@ You may directly, without the slightest preparation, delete networks like these.
 For our demonstration, we created a network named `mayo`, with no subnet and no router in front of it.
 
 === "{{gui}}"
-    While viewing all available networks, click the red three-dot icon at the right-hand side of the `mayo` row and select _Delete Network_.
+    While viewing all available networks, click the :dots-horizontal-circle: icon at the right-hand side of the `mayo` row and select _Delete Network_.
     You will have to confirm the action, and the network will be gone as soon as you do.
 
     ![Delete Mayo](assets/del-net/shot-17_light.png#only-light)
