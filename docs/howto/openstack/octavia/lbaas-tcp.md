@@ -59,14 +59,14 @@ We will also need a listener and a pool, but first things first.
     In the same pane, scroll down a bit if you have to and activate the _Subnet_ radio button.
     Then, from the _Subnet_ dropdown menu below, select an appropriate subnet for the new load balancer to move in front of.
     In our example, the two test servers we have are members of the `network-{{api_region|lower}}` internal network, and `subnet-{{api_region|lower}}` is the name of the corresponding subnet.
-    Click the green _Create_ button below to instantiate the new load balancer.
+    Click the _Create_ button below to instantiate the new load balancer.
 
     ![Select a subnet for the new LB](assets/shot-03_light.png#only-light)
     ![Select a subnet for the new LB](assets/shot-03_dark.png#only-dark)
 
     The creation of the new load balancer starts and, unless something goes wrong, finishes successfully in a minute or so.
     For a view of the load balancer, make sure the left-hand side vertical pane of the {{gui}} is fully visible, click on the _Networking_ category to expand it, and then click once more on the _Load Balancers_ option.
-    In the main area of the {{gui}}, select the new load balancer, click the three-dot icon on the right, and select _View details_ from the pop-up menu that appears.
+    In the main area of the {{gui}}, select the new load balancer, click the :material-dots-horizontal-circle: icon on the right, and select _View details_ from the pop-up menu that appears.
 
     ![View the newly created LB](assets/shot-04_light.png#only-light)
     ![View the newly created LB](assets/shot-04_dark.png#only-dark)
@@ -131,7 +131,7 @@ The load balancer you instantiated has no listener, so let us see how you can eq
 === "{{gui}}"
     Looking at the detailed view of the new load balancer, you see three tabs: _Details_, _Listeners_, and _Pools_.
     Click the _Listeners_ tab and notice the message: "No Listeners for this LoadBalancer".
-    Time to create one, so click the green button labeled _Create a Listener_.
+    Time to create one, so click the button labeled _Create a Listener_.
 
     ![Create a listener](assets/shot-05_light.png#only-light)
     ![Create a listener](assets/shot-05_dark.png#only-dark)
@@ -147,7 +147,7 @@ The load balancer you instantiated has no listener, so let us see how you can eq
     Additionally, type in the listening port.
     The load balancer will be redirecting connections to a couple of servers, which listen for connections on port 61234/TCP, so it makes sense ---though it is not necessary--- for the load balancer to use that same listening port.
     Since you have not yet defined a pool, ignore the _Default pool_ dropdown menu for now.
-    Instead, go ahead and click the green _Create_ button.
+    Instead, go ahead and click the _Create_ button.
 
     ![Select protocol and set port](assets/shot-07_light.png#only-light)
     ![Select protocol and set port](assets/shot-07_dark.png#only-dark)
@@ -225,7 +225,7 @@ For our load balancer to work, we must create a pool and explicitly list its mem
 
 === "{{gui}}"
     With the detailed view of the load balancer expanded, click the _Pools_ tab.
-    You will notice the message "No pools for this LoadBalancer", so click the green _Create a Pool_ button.
+    You will notice the message "No pools for this LoadBalancer", so click the _Create a Pool_ button.
 
     ![Create a pool](assets/shot-09_light.png#only-light)
     ![Create a pool](assets/shot-09_dark.png#only-dark)
@@ -239,7 +239,7 @@ For our load balancer to work, we must create a pool and explicitly list its mem
     ![Type in name, set algorithm and protocol](assets/shot-10_dark.png#only-dark)
 
     A little bit further down the pane, there is the _Listener_ dropdown menu; select the one you created in the previous step.
-    Leave the _Session persistence_ parameter as it is, and create your pool with a click on the green _Create_ button.
+    Leave the _Session persistence_ parameter as it is, and create your pool with a click on the _Create_ button.
 
     ![Select listener, create pool](assets/shot-11_light.png#only-light)
     ![Select listener, create pool](assets/shot-11_dark.png#only-dark)
@@ -312,25 +312,25 @@ For our load balancer to work, we must create a pool and explicitly list its mem
 The pool you created has no members, so it is time to populate it.
 
 === "{{gui}}"
-    In the detailed view of your load balancer, go to the _Pools_ tab and click the bulleted-list icon.
+    In the detailed view of your load balancer, go to the _Pools_ tab and click the :material-format-list-bulleted: icon.
 
     ![Populate the pool](assets/shot-14_light.png#only-light)
     ![Populate the pool](assets/shot-14_dark.png#only-dark)
 
     A new pane titled _Modify Pool Members_ appears, listing all the servers that share the same region with the load balancer.
     In our example, there are three servers.
-    We created `srv-lbaas-1` and `srv-lbaas-2` to test the load balancer, so now we click on the corresponding plus-sign icons to add those to the pool.
+    We created `srv-lbaas-1` and `srv-lbaas-2` to test the load balancer, so now we click on the corresponding :material-plus: icons to add those to the pool.
 
     ![Add members](assets/shot-15_light.png#only-light)
     ![Add members](assets/shot-15_dark.png#only-dark)
 
     You may have noticed that the listening port of each server we added is by default 80, but we want port 61234.
-    To change the listening port of a server, just click the corresponding notepad-and-pen icon.
+    To change the listening port of a server, just click the corresponding :material-pencil-box-outline: icon.
 
     ![Modify ports](assets/shot-16_light.png#only-light)
     ![Modify ports](assets/shot-16_dark.png#only-dark)
 
-    To confirm the changes, click the green _Update_ button.
+    To confirm the changes, click the _Update_ button.
 
     ![apply changes to pool](assets/shot-17_light.png#only-light)
     ![apply changes to pool](assets/shot-17_dark.png#only-dark)
@@ -431,7 +431,7 @@ This makes it reachable from other servers in the same subnet but not from the I
 You probably want the load balancer to be reachable from anywhere, meaning you have to equip it with a floating IP.
 
 === "{{gui}}"
-    While viewing your load balancer, click the three-dot icon on the right.
+    While viewing your load balancer, click the :material-dots-horizontal-circle: icon on the right.
     From the pop-up menu that appears, select _Modify Load Balancer_.
 
     ![Modify load balancer](assets/shot-19_light.png#only-light)
@@ -447,7 +447,7 @@ You probably want the load balancer to be reachable from anywhere, meaning you h
     For the _Region_ parameter, select the one the load balancer resides in.
     For the _Assign to_ parameter, make sure you choose _Load Balancer_.
     In our example, there's only one load balancer in the region we are working in, so the parameter _Assign To_ is already set for us.
-    To finalize the assignment, click the green _Create and Assign_ button.
+    To finalize the assignment, click the _Create and Assign_ button.
 
     ![Configure attachment](assets/shot-21_light.png#only-light)
     ![Configure attachment](assets/shot-21_dark.png#only-dark)
@@ -573,17 +573,17 @@ Of course, whenever an inaccessible service gets accessible again, the load bala
     ![There is no health monitor](assets/shot-23_light.png#only-light)
     ![There is no health monitor](assets/shot-23_dark.png#only-dark)
 
-    To add a health monitor, click the notepad-and-pen icon.
+    To add a health monitor, click the :material-pencil-box-outline: icon.
     A pane titled _Modify Pool_ slides over.
     Scroll down if you have to, and stop when the _Health Monitor_ section is fully visible.
-    You will see a message saying, "No health monitor created", so click the green _Create a Healthmonitor_ button to create one.
+    You will see a message saying, "No health monitor created", so click the _Create a Healthmonitor_ button to create one.
 
     ![Create new health monitor](assets/shot-24_light.png#only-light)
     ![Create new health monitor](assets/shot-24_dark.png#only-dark)
 
     Pick a name for the new health monitor, and set its type to TCP.
     That is the connection protocol that will be used to determine whether pool member services are accessible.
-    Finalize your choices with a click on the green _Create_ button.
+    Finalize your choices with a click on the _Create_ button.
 
     ![Define health monitor characteristics](assets/shot-25_light.png#only-light)
     ![Define health monitor characteristics](assets/shot-25_dark.png#only-dark)
