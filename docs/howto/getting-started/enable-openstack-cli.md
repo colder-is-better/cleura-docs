@@ -31,13 +31,13 @@ Scroll down a bit, until the region section is in full view.
 Expand one or more of the available regions you want your new user to have access to.
 For each one of the expanded regions, select one or more _Projects_.
 For each project, activate one or more _Roles_.
-(Hint: For an overview of the rights that roles provide, hover the mouse pointer over the exclamation mark icon by the _Roles_.)
+(Hint: For an overview of the rights that roles provide, hover the mouse pointer over the :material-alert-circle: icon by the _Roles_.)
 
 ![Regions, projects, and roles](assets/ostack-cli/shot-04_light.png#only-light)
 ![Regions, projects, and roles](assets/ostack-cli/shot-04_dark.png#only-dark)
 
 Optionally, type in a description for the new OpenStack user.
-Then, create the user by clicking the green _Create_ button below the _Description_ box.
+Then, create the user by clicking the _Create_ button below the _Description_ box.
 
 ![User description and creation](assets/ostack-cli/shot-05_light.png#only-light)
 ![User description and creation](assets/ostack-cli/shot-05_dark.png#only-dark)
@@ -52,14 +52,15 @@ At any time, you can view all available OpenStack users by going to the left-han
 
 On the {{gui}}, expand the left-hand side vertical pane, click _Users_, and then _Openstack Users_.
 You will see, listed in the main pane, all available users.
-Click the three-dot round icon on the right of the user their RC file you want.
+Click the :material-dots-horizontal-circle: icon on the right of the user their RC file you want.
+
 From the drop-down menu that appears, select _Download RC-File._
 
 ![Download RC file](assets/ostack-cli/shot-07_light.png#only-light)
 ![Download RC file](assets/ostack-cli/shot-07_dark.png#only-dark)
 
 Before downloading the RC file onto your local computer, you must select one of the available projects to relate it to.
-Do so and then click the blue _Download_ button.
+Do so and then click the _Download_ button.
 
 ![Select project](assets/ostack-cli/shot-08_light.png#only-light)
 ![Select project](assets/ostack-cli/shot-08_dark.png#only-dark)
