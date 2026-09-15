@@ -5,4 +5,7 @@ nav:
   - encrypted-volumes.md
   - retype-volumes.md
   - sync-volumes.md
+  - vol-backup-create.md
+  - vol-backup-restore.md
+  - vol-backup-schedule.md
 title: "Block storage (Cinder)"
