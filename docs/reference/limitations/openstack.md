@@ -20,14 +20,6 @@ It also means that you cannot use the following `openstack` CLI commands; they a
   > You can use `openstack project list`, but this will only list the project(s) that your user account has access to.
 * `openstack domain <subcommand>`
 
-## Cinder
-
-### Volume backup service
-
-{{brand}} does not support the OpenStack volume backup service (`cinder-backup`).
-
-For automated, scheduled volume *snapshots,* consider enabling the [recovery service](../../background/recovery-service.md) for your servers.
-
 ## Glance
 
 ### Image imports
