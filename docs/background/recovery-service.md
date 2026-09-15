@@ -20,6 +20,11 @@ In the following, we explain what this option does, how it works in the backgrou
 The *recovery service* feature is available via the {{gui}} and applies to servers and volumes that use our [Ceph](https://docs.ceph.com/) backend.
 That would be **all** servers but the ones of the `s` [flavor](../reference/flavors/index.md#compute-tiers).
 
+??? "Differences to the Backup as a Service"
+    Compared to the [Backup as a Service](recovery-service.md) (BaaS) {{brand}} offers, the Recovery service works from the {{gui}} only.
+    Also, BaaS supports backups that may be recovered even after deletion.
+    Finally, BaaS is much more flexible regarding backup scheduling.
+
 ## How it works
 
 As soon as you enable the recovery service for a server or a single volume, you start getting snapshots for the corresponding [*RADOS Block Device* (RBD)](https://docs.ceph.com/en/latest/glossary/#term-Ceph-Block-Device) image.
