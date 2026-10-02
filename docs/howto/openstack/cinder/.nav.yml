@@ -8,4 +8,5 @@ nav:
   - vol-backup-create.md
   - vol-backup-restore.md
   - vol-backup-schedule.md
+  - vol-backup-delete.md
 title: "Block storage (Cinder)"
