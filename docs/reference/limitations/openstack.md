@@ -43,6 +43,18 @@ Furthermore, you must ensure that the Nova server [passes the `pcid` CPU feature
 A Nova [server](../../howto/openstack/nova/new-server.md) in {{brand}} can concurrently attach a maximum of 25 persistent volumes.
 This is a limitation of the `virtio-blk` storage driver that ships as part of the guest operating system's kernel.
 
+### Default availability zone placement
+
+When you create a server or a volume without specifying an availability zone (AZ), {{brand}} does not choose the AZ with the most free capacity.
+Resources created without an explicit AZ may be unevenly distributed across zones.
+To spread resources predictably, assign an AZ explicitly when you create each server or volume.
+
+### Availability zone spreading
+
+A [server group](../../howto/openstack/nova/server-group.md) with an `anti-affinity` policy distributes its members across physical compute hosts, but not across AZs.
+There is currently no way to enforce spreading server group members across AZs.
+To spread servers across AZs, manually assign each server to a different AZ when you create it.
+
 ## Neutron
 
 ### Dynamic routing
