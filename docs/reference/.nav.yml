@@ -10,6 +10,7 @@ nav:
   - DNS: dns
   - quotas
   - versions
+  - tools
   - api
   - legal
 title: "Reference"

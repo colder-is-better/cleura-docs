@@ -72,6 +72,8 @@ plugins:
   - awesome-nav
   - git-authors:
       enabled: true
+      exclude:
+        - 'reference/tools/cleura-cli/*'
       show_email_address: false
   - git-revision-date-localized:
       enable_creation_date: true
