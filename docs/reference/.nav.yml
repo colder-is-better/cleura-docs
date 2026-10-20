@@ -1,16 +1,9 @@
 ---
 nav:
   - index.md
-  - features
-  - limitations
-  - flavors
-  - volumes
-  - images
-  - AI: ai
-  - DNS: dns
-  - quotas
-  - versions
+  - services
   - tools
+  - quotas
   - api
   - legal
 title: "Reference"
